@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D40AD3423D2525300FDB4C6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40AD3323D2525300FDB4C6 /* Restaurant.swift */; };
+		1D5B105B23D0DCCA009DCE45 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */; };
 		1D8EBB0023B504BF00A95F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */; };
 		1D8EBB0223B504BF00A95F13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB0123B504BF00A95F13 /* SceneDelegate.swift */; };
-		1D8EBB0423B504BF00A95F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB0323B504BF00A95F13 /* ViewController.swift */; };
 		1D8EBB0723B504BF00A95F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBB0523B504BF00A95F13 /* Main.storyboard */; };
 		1D8EBB0923B504C100A95F13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBB0823B504C100A95F13 /* Assets.xcassets */; };
 		1D8EBB0C23B504C100A95F13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBB0A23B504C100A95F13 /* LaunchScreen.storyboard */; };
 		1D8EBB1723B504C100A95F13 /* FoodPinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB1623B504C100A95F13 /* FoodPinTests.swift */; };
 		1D8EBB2223B504C100A95F13 /* FoodPinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB2123B504C100A95F13 /* FoodPinUITests.swift */; };
+		1D8EBB3023B55A6800A95F13 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */; };
+		1DEF7FFF23BA7DFF002D98C1 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF7FFE23BA7DFF002D98C1 /* RestaurantTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D40AD3323D2525300FDB4C6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		1D8EBAFC23B504BF00A95F13 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8EBB0123B504BF00A95F13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1D8EBB0323B504BF00A95F13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1D8EBB0623B504BF00A95F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1D8EBB0823B504C100A95F13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1D8EBB0B23B504C100A95F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		1D8EBB1D23B504C100A95F13 /* FoodPinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodPinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8EBB2123B504C100A95F13 /* FoodPinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPinUITests.swift; sourceTree = "<group>"; };
 		1D8EBB2323B504C100A95F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		1DEF7FFE23BA7DFF002D98C1 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +107,14 @@
 			children = (
 				1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */,
 				1D8EBB0123B504BF00A95F13 /* SceneDelegate.swift */,
-				1D8EBB0323B504BF00A95F13 /* ViewController.swift */,
 				1D8EBB0523B504BF00A95F13 /* Main.storyboard */,
 				1D8EBB0823B504C100A95F13 /* Assets.xcassets */,
 				1D8EBB0A23B504C100A95F13 /* LaunchScreen.storyboard */,
 				1D8EBB0D23B504C100A95F13 /* Info.plist */,
+				1DEF7FFE23BA7DFF002D98C1 /* RestaurantTableViewCell.swift */,
+				1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */,
+				1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */,
+				1D40AD3323D2525300FDB4C6 /* Restaurant.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -259,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D8EBB0423B504BF00A95F13 /* ViewController.swift in Sources */,
+				1DEF7FFF23BA7DFF002D98C1 /* RestaurantTableViewCell.swift in Sources */,
 				1D8EBB0023B504BF00A95F13 /* AppDelegate.swift in Sources */,
+				1D40AD3423D2525300FDB4C6 /* Restaurant.swift in Sources */,
+				1D5B105B23D0DCCA009DCE45 /* RestaurantDetailViewController.swift in Sources */,
 				1D8EBB0223B504BF00A95F13 /* SceneDelegate.swift in Sources */,
+				1D8EBB3023B55A6800A95F13 /* RestaurantTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,7 +445,6 @@
 		1D8EBB2723B504C100A95F13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QHSLQU2WK;
 				INFOPLIST_FILE = FoodPin/Info.plist;
@@ -451,7 +462,6 @@
 		1D8EBB2823B504C100A95F13 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8QHSLQU2WK;
 				INFOPLIST_FILE = FoodPin/Info.plist;
