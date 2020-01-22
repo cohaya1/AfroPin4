@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		1D40AD3323D2525300FDB4C6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
-		1D8EBAFC23B504BF00A95F13 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D8EBAFC23B504BF00A95F13 /* NaijaFoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaijaFoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8EBB0123B504BF00A95F13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1D8EBB0623B504BF00A95F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 		1D8EBAFD23B504BF00A95F13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D8EBAFC23B504BF00A95F13 /* FoodPin.app */,
+				1D8EBAFC23B504BF00A95F13 /* NaijaFoodPin.app */,
 				1D8EBB1223B504C100A95F13 /* FoodPinTests.xctest */,
 				1D8EBB1D23B504C100A95F13 /* FoodPinUITests.xctest */,
 			);
@@ -154,7 +154,7 @@
 			);
 			name = FoodPin;
 			productName = FoodPin;
-			productReference = 1D8EBAFC23B504BF00A95F13 /* FoodPin.app */;
+			productReference = 1D8EBAFC23B504BF00A95F13 /* NaijaFoodPin.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1D8EBB1123B504C100A95F13 /* FoodPinTests */ = {
@@ -453,7 +453,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.lma.FoodPin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NaijaFoodPin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.company.lma.FoodPin;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = NaijaFoodPin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
