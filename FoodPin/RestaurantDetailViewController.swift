@@ -8,8 +8,26 @@
 
 import UIKit
 
-class RestaurantDetailViewController: UIViewController {
-
+class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+    func numberOfSections ( in tableView: UITableView) -> Int {
+        return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch  indexPath.row {
+        case 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: String(describing : RestaurantDetailIconTextTableViewCell.self),for: indexPath) as! RestaurantDetailIconTextCell
+            
+        default:
+            <#code#>
+        }
+    }
+    
+    @IBOutlet var tableview: UITableView!
+     @IBOutlet var headerview: RestaurantDetailHeaderView!
     @IBOutlet var restaurantImageView: UIImageView!
     @IBOutlet var restaurantNameLabel: UILabel!
     @IBOutlet var restaurantTypeLabel: UILabel!
@@ -18,13 +36,14 @@ class RestaurantDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*
-        restaurantImageView.image = UIImage(named: restaurantImagename)
-        restaurantNameLabel.text = restaurantName
-        restaurantTypeLabel.text = restaurantType
-        restaurantLocationLabel.text = restaurantLocation
-        */
         
+        
+        headerview.nameLabel.text = restaurant.name
+        headerview.typeLabel.text = restaurant.type
+        headerview.HeaderImageView.image = UIImage (named: restaurant.image)
+       // headerview.HeartImageView.isHidden = (restaurant.isVisited)? false : true
+        
+    
         navigationItem.largeTitleDisplayMode = .never
         // Do any additional setup after loading the view.
     }

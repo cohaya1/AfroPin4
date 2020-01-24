@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1D40AD3423D2525300FDB4C6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40AD3323D2525300FDB4C6 /* Restaurant.swift */; };
+		1D40AD8323D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD7F23D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf */; };
+		1D40AD8423D7DD3400FDB4C6 /* RestaurantMenuHollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD8023D7DD3400FDB4C6 /* RestaurantMenuHollow.ttf */; };
+		1D40AD8523D7DD3400FDB4C6 /* RestaurantMenuBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD8123D7DD3400FDB4C6 /* RestaurantMenuBook.ttf */; };
+		1D40AD8623D7DD3400FDB4C6 /* RestaurantMenu.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD8223D7DD3400FDB4C6 /* RestaurantMenu.ttf */; };
+		1D40AD8823D7FDED00FDB4C6 /* Rubik-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD8723D7FDED00FDB4C6 /* Rubik-Medium.ttf */; };
+		1D40AD8A23D80AF000FDB4C6 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD8923D80AF000FDB4C6 /* Rubik-Regular.ttf */; };
+		1D40AD8C23D8A10A00FDB4C6 /* RestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40AD8B23D8A10A00FDB4C6 /* RestaurantDetailHeaderView.swift */; };
+		1D40AD8E23DB8C8500FDB4C6 /* RestaurantDetailIconTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40AD8D23DB8C8500FDB4C6 /* RestaurantDetailIconTextTableViewCell.swift */; };
+		1D40AD9023DB94CE00FDB4C6 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD8F23DB94CE00FDB4C6 /* Rubik-Light.ttf */; };
+		1D40AD9223DB95E600FDB4C6 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40AD9123DB95E600FDB4C6 /* RestaurantDetailTextCell.swift */; };
 		1D5B105B23D0DCCA009DCE45 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */; };
 		1D8EBB0023B504BF00A95F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */; };
 		1D8EBB0223B504BF00A95F13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB0123B504BF00A95F13 /* SceneDelegate.swift */; };
@@ -39,6 +49,16 @@
 
 /* Begin PBXFileReference section */
 		1D40AD3323D2525300FDB4C6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		1D40AD7F23D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RestaurantMenuBookCollege.ttf; sourceTree = "<group>"; };
+		1D40AD8023D7DD3400FDB4C6 /* RestaurantMenuHollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RestaurantMenuHollow.ttf; sourceTree = "<group>"; };
+		1D40AD8123D7DD3400FDB4C6 /* RestaurantMenuBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RestaurantMenuBook.ttf; sourceTree = "<group>"; };
+		1D40AD8223D7DD3400FDB4C6 /* RestaurantMenu.ttf */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = RestaurantMenu.ttf; sourceTree = "<group>"; };
+		1D40AD8723D7FDED00FDB4C6 /* Rubik-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Medium.ttf"; sourceTree = "<group>"; };
+		1D40AD8923D80AF000FDB4C6 /* Rubik-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Regular.ttf"; sourceTree = "<group>"; };
+		1D40AD8B23D8A10A00FDB4C6 /* RestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
+		1D40AD8D23DB8C8500FDB4C6 /* RestaurantDetailIconTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailIconTextTableViewCell.swift; sourceTree = "<group>"; };
+		1D40AD8F23DB94CE00FDB4C6 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
+		1D40AD9123DB95E600FDB4C6 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
 		1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		1D8EBAFC23B504BF00A95F13 /* NaijaFoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaijaFoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +102,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D40AD7E23D7DCB500FDB4C6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1D40AD8223D7DD3400FDB4C6 /* RestaurantMenu.ttf */,
+				1D40AD8123D7DD3400FDB4C6 /* RestaurantMenuBook.ttf */,
+				1D40AD7F23D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf */,
+				1D40AD8723D7FDED00FDB4C6 /* Rubik-Medium.ttf */,
+				1D40AD8923D80AF000FDB4C6 /* Rubik-Regular.ttf */,
+				1D40AD8F23DB94CE00FDB4C6 /* Rubik-Light.ttf */,
+				1D40AD8023D7DD3400FDB4C6 /* RestaurantMenuHollow.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1D40AD9323DB95FE00FDB4C6 /* Table Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1DEF7FFE23BA7DFF002D98C1 /* RestaurantTableViewCell.swift */,
+				1D40AD8D23DB8C8500FDB4C6 /* RestaurantDetailIconTextTableViewCell.swift */,
+				1D40AD9123DB95E600FDB4C6 /* RestaurantDetailTextCell.swift */,
+			);
+			path = "Table Cells";
+			sourceTree = "<group>";
+		};
 		1D8EBAF323B504BF00A95F13 = {
 			isa = PBXGroup;
 			children = (
@@ -105,16 +149,18 @@
 		1D8EBAFE23B504BF00A95F13 /* FoodPin */ = {
 			isa = PBXGroup;
 			children = (
+				1D40AD7E23D7DCB500FDB4C6 /* Fonts */,
 				1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */,
 				1D8EBB0123B504BF00A95F13 /* SceneDelegate.swift */,
 				1D8EBB0523B504BF00A95F13 /* Main.storyboard */,
 				1D8EBB0823B504C100A95F13 /* Assets.xcassets */,
 				1D8EBB0A23B504C100A95F13 /* LaunchScreen.storyboard */,
 				1D8EBB0D23B504C100A95F13 /* Info.plist */,
-				1DEF7FFE23BA7DFF002D98C1 /* RestaurantTableViewCell.swift */,
+				1D40AD9323DB95FE00FDB4C6 /* Table Cells */,
 				1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */,
 				1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */,
 				1D40AD3323D2525300FDB4C6 /* Restaurant.swift */,
+				1D40AD8B23D8A10A00FDB4C6 /* RestaurantDetailHeaderView.swift */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -241,9 +287,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D40AD8423D7DD3400FDB4C6 /* RestaurantMenuHollow.ttf in Resources */,
+				1D40AD8523D7DD3400FDB4C6 /* RestaurantMenuBook.ttf in Resources */,
 				1D8EBB0C23B504C100A95F13 /* LaunchScreen.storyboard in Resources */,
+				1D40AD8623D7DD3400FDB4C6 /* RestaurantMenu.ttf in Resources */,
+				1D40AD8A23D80AF000FDB4C6 /* Rubik-Regular.ttf in Resources */,
+				1D40AD8323D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf in Resources */,
 				1D8EBB0923B504C100A95F13 /* Assets.xcassets in Resources */,
+				1D40AD9023DB94CE00FDB4C6 /* Rubik-Light.ttf in Resources */,
 				1D8EBB0723B504BF00A95F13 /* Main.storyboard in Resources */,
+				1D40AD8823D7FDED00FDB4C6 /* Rubik-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +322,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DEF7FFF23BA7DFF002D98C1 /* RestaurantTableViewCell.swift in Sources */,
+				1D40AD9223DB95E600FDB4C6 /* RestaurantDetailTextCell.swift in Sources */,
 				1D8EBB0023B504BF00A95F13 /* AppDelegate.swift in Sources */,
 				1D40AD3423D2525300FDB4C6 /* Restaurant.swift in Sources */,
+				1D40AD8E23DB8C8500FDB4C6 /* RestaurantDetailIconTextTableViewCell.swift in Sources */,
+				1D40AD8C23D8A10A00FDB4C6 /* RestaurantDetailHeaderView.swift in Sources */,
 				1D5B105B23D0DCCA009DCE45 /* RestaurantDetailViewController.swift in Sources */,
 				1D8EBB0223B504BF00A95F13 /* SceneDelegate.swift in Sources */,
 				1D8EBB3023B55A6800A95F13 /* RestaurantTableViewController.swift in Sources */,
