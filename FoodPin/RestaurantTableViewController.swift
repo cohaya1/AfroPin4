@@ -26,6 +26,13 @@ class RestaurantTableViewController: UITableViewController {
         tableView.cellLayoutMarginsFollowReadableWidth = true
         //Makes Navigation title larger
         navigationController?.navigationBar.prefersLargeTitles = true
+        // Customize the navigation bar
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        if let customFont = UIFont(name: "Rubik-Medium", size: 40.0) {
+            navigationController?.navigationBar.largeTitleTextAttributes = [ NSAttributedString.Key.foregroundColor: UIColor(red: 231, green: 76, blue: 60), NSAttributedString.Key.font: customFont ]
+        }
+        navigationController?.hidesBarsOnSwipe = true
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

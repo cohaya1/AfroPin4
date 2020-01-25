@@ -203,25 +203,25 @@
                                     </connections>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailIconTextTableViewCell" id="8nJ-xp-vuQ" customClass="RestaurantDetailIconTextTableViewCell" customModule="NaijaFoodPin" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailIconTextCellTableView" id="8nJ-xp-vuQ" customClass="RestaurantDetailIconTextCellTableView" customModule="NaijaFoodPin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="378" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8nJ-xp-vuQ" id="Sqp-Qv-rUK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5UB-Qh-Khq">
-                                                    <rect key="frame" x="34" y="11" width="30" height="20"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5UB-Qh-Khq">
+                                                    <rect key="frame" x="19" y="11" width="28.5" height="20"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n6I-WH-JwK">
-                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.fill.arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n6I-WH-JwK">
+                                                            <rect key="frame" x="0.0" y="-0.5" width="18.5" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="YAi-3t-D73"/>
                                                                 <constraint firstAttribute="width" constant="20" id="bXE-Mf-92y"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYf-fz-C3t">
-                                                            <rect key="frame" x="30" y="1.5" width="0.0" height="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYf-fz-C3t">
+                                                            <rect key="frame" x="28.5" y="1.5" width="0.0" height="17"/>
                                                             <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -237,11 +237,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="iconimageView" destination="n6I-WH-JwK" id="qc1-Th-uoF"/>
-                                            <outlet property="shorttextLabel" destination="cYf-fz-C3t" id="EqW-cQ-DFn"/>
+                                            <outlet property="iconimageView" destination="n6I-WH-JwK" id="1gT-PH-sVw"/>
+                                            <outlet property="shorttextLabel" destination="cYf-fz-C3t" id="Qyl-or-HBe"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="YQc-AJ-2b5" customClass="RestaurantDetailTextCell" customModule="NaijaFoodPin" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailTextCell" id="YQc-AJ-2b5" customClass="RestaurantDetailTextCell" customModule="NaijaFoodPin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="422" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YQc-AJ-2b5" id="XI6-Tr-BuY">
@@ -263,7 +263,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="descriptionLabel" destination="eBo-Xo-jeP" id="2DY-HN-dCM"/>
+                                            <outlet property="DescriptionLabel" destination="eBo-Xo-jeP" id="tud-ep-9aE"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -290,4 +290,7 @@
             <point key="canvasLocation" x="79.710144927536234" y="-223.66071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="phone.fill.arrow.right" catalog="system" width="56" height="64"/>
+    </resources>
 </document>
