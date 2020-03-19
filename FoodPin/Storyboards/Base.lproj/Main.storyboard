@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tfy-x0-gt8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tfy-x0-gt8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -18,7 +17,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--FoodPin-->
+        <!--Naija FoodPin-->
         <scene sceneID="eCT-0C-BUj">
             <objects>
                 <tableViewController id="sVM-r6-oOX" customClass="RestaurantTableViewController" customModule="NaijaFoodPin" customModuleProvider="target" sceneMemberID="viewController">
@@ -96,7 +95,7 @@
                             <outlet property="delegate" destination="sVM-r6-oOX" id="2CF-VI-9Fq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="FoodPin" id="Bek-bB-FtF"/>
+                    <navigationItem key="navigationItem" title="Naija FoodPin" id="Bek-bB-FtF"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2a9-n2-iow" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -124,32 +123,31 @@
         <scene sceneID="aYu-aD-dGQ">
             <objects>
                 <viewController id="JRB-rV-nD0" customClass="RestaurantDetailViewController" customModule="NaijaFoodPin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bmM-7z-SzC">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bmM-7z-SzC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qLo-Yh-gSh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="e6h-OO-87p">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6h-OO-87p">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <view key="tableHeaderView" contentMode="scaleAspectFill" id="zDJ-J0-iM0" customClass="RestaurantDetailHeaderView" customModule="NaijaFoodPin" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4ZT-ch-OV7">
-                                            <rect key="frame" x="0.0" y="0.0" width="0.0" height="350"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                         </imageView>
-                                        <view clipsSubviews="YES" alpha="0.5" contentMode="scaleAspectFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nXs-W5-yfj" userLabel="DimView">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="364"/>
+                                        <view autoresizesSubviews="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" ambiguous="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nXs-W5-yfj" userLabel="DimView">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAX-8u-u0Z" userLabel="Name Label">
-                                            <rect key="frame" x="14" y="271.5" width="91.5" height="41.5"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAX-8u-u0Z" userLabel="Name Label">
+                                            <rect key="frame" x="14" y="271.5" width="91" height="41.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91.5" id="Baz-px-HXD"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="91" id="Baz-px-HXD"/>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41.5" id="b1R-ti-hlJ"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="27"/>
@@ -180,6 +178,7 @@
                                         <constraint firstAttribute="trailing" secondItem="4ZT-ch-OV7" secondAttribute="trailing" id="1R8-JZ-Hu3"/>
                                         <constraint firstItem="gAX-8u-u0Z" firstAttribute="leading" secondItem="X1u-eH-bAK" secondAttribute="leading" id="1fV-8M-mM2"/>
                                         <constraint firstItem="X1u-eH-bAK" firstAttribute="top" secondItem="gAX-8u-u0Z" secondAttribute="bottom" constant="3" id="2vj-Ce-36P"/>
+                                        <constraint firstItem="gAX-8u-u0Z" firstAttribute="leading" secondItem="4ZT-ch-OV7" secondAttribute="trailing" constant="14" id="7Hd-8g-Ent"/>
                                         <constraint firstItem="fJx-RJ-idR" firstAttribute="leading" secondItem="X1u-eH-bAK" secondAttribute="trailing" constant="8" id="DDW-u6-gS9"/>
                                         <constraint firstAttribute="bottom" secondItem="X1u-eH-bAK" secondAttribute="bottom" constant="14" id="DEc-du-Smv"/>
                                         <constraint firstItem="X1u-eH-bAK" firstAttribute="leading" secondItem="zDJ-J0-iM0" secondAttribute="leading" constant="14" id="Jb7-ur-WxY"/>
@@ -192,6 +191,7 @@
                                         <constraint firstAttribute="trailing" secondItem="4ZT-ch-OV7" secondAttribute="trailing" id="Wmb-rq-Jeo"/>
                                         <constraint firstAttribute="bottom" secondItem="4ZT-ch-OV7" secondAttribute="bottom" id="jAP-cL-csA"/>
                                         <constraint firstAttribute="bottom" secondItem="4ZT-ch-OV7" secondAttribute="bottom" id="kvS-2x-hgh"/>
+                                        <constraint firstItem="nXs-W5-yfj" firstAttribute="top" secondItem="zDJ-J0-iM0" secondAttribute="top" id="mzt-AS-PJ5"/>
                                         <constraint firstAttribute="trailing" secondItem="nXs-W5-yfj" secondAttribute="trailing" id="os5-hB-V2f"/>
                                         <constraint firstItem="4ZT-ch-OV7" firstAttribute="leading" secondItem="zDJ-J0-iM0" secondAttribute="leading" id="t4Y-kW-VB3"/>
                                     </constraints>
@@ -204,24 +204,24 @@
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailIconTextCellTableView" id="8nJ-xp-vuQ" customClass="RestaurantDetailIconTextCellTableView" customModule="NaijaFoodPin" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="378" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="378" width="414" height="44.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8nJ-xp-vuQ" id="Sqp-Qv-rUK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="5UB-Qh-Khq">
-                                                    <rect key="frame" x="19" y="11" width="28.5" height="20"/>
+                                                    <rect key="frame" x="23" y="11" width="368" height="20.5"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.fill.arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="n6I-WH-JwK">
-                                                            <rect key="frame" x="0.0" y="-0.5" width="18.5" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="YAi-3t-D73"/>
                                                                 <constraint firstAttribute="width" constant="20" id="bXE-Mf-92y"/>
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYf-fz-C3t">
-                                                            <rect key="frame" x="28.5" y="1.5" width="0.0" height="17"/>
+                                                            <rect key="frame" x="30" y="2" width="338" height="17"/>
                                                             <fontDescription key="fontDescription" name="Rubik-Regular" family="Rubik" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -242,14 +242,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailTextCell" id="YQc-AJ-2b5" customClass="RestaurantDetailTextCell" customModule="NaijaFoodPin" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="422" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="422.5" width="414" height="44.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="YQc-AJ-2b5" id="XI6-Tr-BuY">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eBo-Xo-jeP">
-                                                    <rect key="frame" x="19" y="11" width="0.0" height="18"/>
+                                                    <rect key="frame" x="23" y="11" width="368" height="18.5"/>
                                                     <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -272,11 +272,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="qLo-Yh-gSh" firstAttribute="top" secondItem="bmM-7z-SzC" secondAttribute="top" id="15G-30-lbp"/>
+                            <constraint firstItem="e6h-OO-87p" firstAttribute="leading" secondItem="bmM-7z-SzC" secondAttribute="leading" id="J0n-YU-6il"/>
                             <constraint firstAttribute="bottom" secondItem="qLo-Yh-gSh" secondAttribute="bottom" id="Ktu-SC-pZ9"/>
-                            <constraint firstItem="qLo-Yh-gSh" firstAttribute="leading" secondItem="T7i-kq-eEQ" secondAttribute="leading" id="fY5-IG-LX5"/>
-                            <constraint firstItem="qLo-Yh-gSh" firstAttribute="trailing" secondItem="T7i-kq-eEQ" secondAttribute="trailing" id="rgw-GC-3FM"/>
+                            <constraint firstItem="e6h-OO-87p" firstAttribute="top" secondItem="bmM-7z-SzC" secondAttribute="top" id="aaR-gb-rsc"/>
+                            <constraint firstItem="e6h-OO-87p" firstAttribute="trailing" secondItem="bmM-7z-SzC" secondAttribute="trailing" id="amK-Ic-EZk"/>
+                            <constraint firstItem="e6h-OO-87p" firstAttribute="bottom" secondItem="bmM-7z-SzC" secondAttribute="bottom" constant="34" id="fNN-WK-Go4"/>
+                            <constraint firstItem="qLo-Yh-gSh" firstAttribute="leading" secondItem="bmM-7z-SzC" secondAttribute="leading" id="fY5-IG-LX5"/>
+                            <constraint firstItem="qLo-Yh-gSh" firstAttribute="trailing" secondItem="bmM-7z-SzC" secondAttribute="trailing" id="rgw-GC-3FM"/>
+                            <constraint firstAttribute="bottom" secondItem="e6h-OO-87p" secondAttribute="bottom" id="uNY-nt-N6Q"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="T7i-kq-eEQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="BOf-S6-PbQ"/>
                     <connections>

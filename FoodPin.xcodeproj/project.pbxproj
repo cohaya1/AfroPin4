@@ -152,15 +152,12 @@
 				1D40AD7E23D7DCB500FDB4C6 /* Fonts */,
 				1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */,
 				1D8EBB0123B504BF00A95F13 /* SceneDelegate.swift */,
-				1D8EBB0523B504BF00A95F13 /* Main.storyboard */,
+				1DFB90402422936000D41F10 /* Storyboards */,
 				1D8EBB0823B504C100A95F13 /* Assets.xcassets */,
-				1D8EBB0A23B504C100A95F13 /* LaunchScreen.storyboard */,
 				1D8EBB0D23B504C100A95F13 /* Info.plist */,
 				1D40AD9323DB95FE00FDB4C6 /* Table Cells */,
-				1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */,
-				1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */,
-				1D40AD3323D2525300FDB4C6 /* Restaurant.swift */,
-				1D40AD8B23D8A10A00FDB4C6 /* RestaurantDetailHeaderView.swift */,
+				1DFB903E242292B500D41F10 /* Controllers */,
+				1DFB903F2422933700D41F10 /* View Model */,
 			);
 			path = FoodPin;
 			sourceTree = "<group>";
@@ -181,6 +178,33 @@
 				1D8EBB2323B504C100A95F13 /* Info.plist */,
 			);
 			path = FoodPinUITests;
+			sourceTree = "<group>";
+		};
+		1DFB903E242292B500D41F10 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */,
+				1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1DFB903F2422933700D41F10 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1D40AD3323D2525300FDB4C6 /* Restaurant.swift */,
+				1D40AD8B23D8A10A00FDB4C6 /* RestaurantDetailHeaderView.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		1DFB90402422936000D41F10 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1D8EBB0523B504BF00A95F13 /* Main.storyboard */,
+				1D8EBB0A23B504C100A95F13 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

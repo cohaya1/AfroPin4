@@ -19,11 +19,16 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+         navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.tintColor = .black
+        
+        tableview.contentInsetAdjustmentBehavior = .never
         
         headerview.nameLabel.text = restaurant.name
         headerview.typeLabel.text = restaurant.type
         headerview.HeaderImageView.image = UIImage (named: restaurant.image)
-       // headerview.HeartImageView.isHidden = (restaurant.isVisited)? false : true
+       //headerview.HeartImageView.isHidden = (restaurant.isVisited)? false : true
        // Set the table view's delegate and data source
        tableview.delegate = self
               tableview.dataSource = self
