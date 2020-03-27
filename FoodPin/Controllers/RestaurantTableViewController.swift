@@ -31,8 +31,10 @@ class RestaurantTableViewController: UITableViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         if let customFont = UIFont(name: "Rubik-Medium", size: 40.0) {
             navigationController?.navigationBar.largeTitleTextAttributes = [ NSAttributedString.Key.foregroundColor: UIColor(red: 231.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0), NSAttributedString.Key.font: customFont ]
+            //Hides nav bar on swipe
+            navigationController?.hidesBarsOnSwipe = true
         }
-        navigationController?.hidesBarsOnSwipe = true
+  //      navigationController?.hidesBarsOnSwipe = true
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -155,7 +157,10 @@ class RestaurantTableViewController: UITableViewController {
             return true
         }
         */
-
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnSwipe = true
+    }
         
         // Override to support editing the table view.
         override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {

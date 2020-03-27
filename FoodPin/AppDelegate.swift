@@ -18,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let backbuttonimage = UIImage ( named: "back")
         UINavigationBar.appearance().backIndicatorImage = backbuttonimage
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = backbuttonimage
-        let tableview2 = UITableView()
-        tableview2.contentInsetAdjustmentBehavior = .never
+        //let tableview2 = UITableView()
+       // tableview2.contentInsetAdjustmentBehavior = .never
+        UIApplication.shared.statusBarStyle = .lightContent
         return true
     }
 
