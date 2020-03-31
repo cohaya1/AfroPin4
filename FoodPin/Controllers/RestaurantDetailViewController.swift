@@ -62,7 +62,12 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
        else if segue.identifier == "showReview" {
             let destinationcontroller = segue.destination as! ReviewViewController; destinationcontroller.restaurant = restaurant
         }
+        
     }
+    @IBAction func close (segue: UIStoryboardSegue) {
+       dismiss(animated: true, completion: nil)
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
         switch indexPath.row {
@@ -108,9 +113,26 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
             
                            }
                        }
+    @IBAction func rateRestaurant(segue: UIStoryboardSegue) {
+        dismiss(animated: true, completion: {
+            if let rating = segue.identifier {
+                self.restaurant.rating = rating
+                
+                self.headerview.RatingImageView.image = UIImage(named: rating)
+                
+                let scaleTransform = CGAffineTransform.init(scaleX: 0.1, y: 0.1)
+                self.headerview.RatingImageView.transform = scaleTransform
+                self.headerview.RatingImageView.alpha = 0
+                
+                UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.7, options: [], animations: {
+                    self.headerview.RatingImageView.transform = .identity
+                    self.headerview.RatingImageView.alpha = 1
+                }, completion: nil)
+            }
+        })
+    }
 
                    }
-
 
     /*
     // MARK: - Navigation

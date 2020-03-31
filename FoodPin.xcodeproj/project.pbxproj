@@ -26,6 +26,7 @@
 		1D6CEAA2242A59E600325A55 /* MapKitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEAA1242A59E600325A55 /* MapKitTableViewCell.swift */; };
 		1D6CEAA4242D02F600325A55 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEAA3242D02F600325A55 /* MapViewController.swift */; };
 		1D6CEAA6242E90B800325A55 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEAA5242E90B800325A55 /* ReviewViewController.swift */; };
+		1D894F132432471500EA14DE /* RouteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D894F122432471500EA14DE /* RouteTableViewController.swift */; };
 		1D8EBB0023B504BF00A95F13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */; };
 		1D8EBB0223B504BF00A95F13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB0123B504BF00A95F13 /* SceneDelegate.swift */; };
 		1D8EBB0723B504BF00A95F13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBB0523B504BF00A95F13 /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		1D6CEAA1242A59E600325A55 /* MapKitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitTableViewCell.swift; sourceTree = "<group>"; };
 		1D6CEAA3242D02F600325A55 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1D6CEAA5242E90B800325A55 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		1D894F122432471500EA14DE /* RouteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTableViewController.swift; sourceTree = "<group>"; };
 		1D8EBAFC23B504BF00A95F13 /* NaijaFoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NaijaFoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D8EBAFF23B504BF00A95F13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D8EBB0123B504BF00A95F13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */,
 				1D6CEAA3242D02F600325A55 /* MapViewController.swift */,
 				1D6CEAA5242E90B800325A55 /* ReviewViewController.swift */,
+				1D894F122432471500EA14DE /* RouteTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				1D6CEA9B24294CFE00325A55 /* UINavigationController+ext.swift in Sources */,
 				1D6CEA942425162B00325A55 /* UIColor+ext.swift in Sources */,
 				1D6CEAA4242D02F600325A55 /* MapViewController.swift in Sources */,
+				1D894F132432471500EA14DE /* RouteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

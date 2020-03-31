@@ -10,11 +10,13 @@ import UIKit
 
 class RestaurantDetailHeaderView: UIView {
     @IBOutlet var HeaderImageView : UIImageView!
-    @IBOutlet var nameLabel : UILabel! {
-        didSet {
-            nameLabel.numberOfLines = 0
-        }
-    }
+    @IBOutlet var nameLabel : UILabel!  {
+           didSet {
+               nameLabel.numberOfLines = 0
+           }
+       }
+    @IBOutlet var RatingImageView : UIImageView!
+      
     @IBOutlet var typeLabel : UILabel! {
         didSet {
             typeLabel.layer.cornerRadius = 5.0
