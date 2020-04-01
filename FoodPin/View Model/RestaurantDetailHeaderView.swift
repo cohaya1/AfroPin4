@@ -9,6 +9,7 @@
 import UIKit
 
 class RestaurantDetailHeaderView: UIView {
+   
     @IBOutlet var HeaderImageView : UIImageView!
     @IBOutlet var nameLabel : UILabel!  {
            didSet {
@@ -16,13 +17,14 @@ class RestaurantDetailHeaderView: UIView {
            }
        }
     @IBOutlet var RatingImageView : UIImageView!
-      
+    
     @IBOutlet var typeLabel : UILabel! {
         didSet {
             typeLabel.layer.cornerRadius = 5.0
             typeLabel.layer.masksToBounds = true
         }
     }
+    
     
      @IBOutlet var HeartImageView : UIImageView!
     /*
@@ -34,3 +36,5 @@ class RestaurantDetailHeaderView: UIView {
     */
    
 }
+
+

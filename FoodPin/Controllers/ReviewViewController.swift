@@ -7,8 +7,12 @@
 //
 
 import UIKit
-
+protocol SideSelectionDelegate {
+    func didTapChoice( image: UIImage)
+}
 class ReviewViewController: UIViewController {
+    var selectiondelegate: SideSelectionDelegate!
+    
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var rateButtons: [UIButton]!
     @IBOutlet var closeButton: UIButton!
@@ -38,7 +42,7 @@ class ReviewViewController: UIViewController {
                let moveUpTransform = CGAffineTransform.init(translationX: 0, y: -400)
                closeButton.transform = moveUpTransform
            }
-    
+   
     
     override func viewWillAppear(_ animated: Bool) {
     

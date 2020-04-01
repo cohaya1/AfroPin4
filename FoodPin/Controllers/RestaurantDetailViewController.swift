@@ -13,12 +13,13 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
     
     @IBOutlet var tableview: UITableView!
      @IBOutlet var headerview: RestaurantDetailHeaderView!
-    @IBOutlet var restaurantImageView: UIImageView!
+ 
     
     var restaurant = Restaurant()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
          navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.tintColor = .white
@@ -30,6 +31,7 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
         headerview.nameLabel.text = restaurant.name
         headerview.typeLabel.text = restaurant.type
         headerview.HeaderImageView.image = UIImage (named: restaurant.image)
+        headerview.RatingImageView.image = UIImage (named: restaurant.rating)
        //headerview.HeartImageView.isHidden = (restaurant.isVisited)? false : true
        // Set the table view's delegate and data source
        tableview.delegate = self
@@ -46,27 +48,14 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
         navigationController?.setNavigationBarHidden(false, animated: true)
     }
      
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
+    
     func numberOfSections ( in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
     }
-    override func prepare( for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showMap" {
-            let destinationcontroller = segue.destination as! MapViewController; destinationcontroller.restaurant = restaurant
-        }
-       else if segue.identifier == "showReview" {
-            let destinationcontroller = segue.destination as! ReviewViewController; destinationcontroller.restaurant = restaurant
-        }
-        
-    }
-    @IBAction func close (segue: UIStoryboardSegue) {
-       dismiss(animated: true, completion: nil)
-    }
+   
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell  {
@@ -113,26 +102,44 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
             
                            }
                        }
+    override func prepare( for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "showMap" {
+               let destinationcontroller = segue.destination as! MapViewController; destinationcontroller.restaurant = restaurant
+           }
+          else if segue.identifier == "showReview" {
+               let destinationcontroller = segue.destination as! ReviewViewController; destinationcontroller.restaurant = restaurant
+           }
+      
+           
+       }
+       @IBAction func close (segue: UIStoryboardSegue) {
+          dismiss(animated: true, completion: nil)
+       }
+       
     @IBAction func rateRestaurant(segue: UIStoryboardSegue) {
-        dismiss(animated: true, completion: {
-            if let rating = segue.identifier {
-                self.restaurant.rating = rating
-                
-                self.headerview.RatingImageView.image = UIImage(named: rating)
-                
-                let scaleTransform = CGAffineTransform.init(scaleX: 0.1, y: 0.1)
-                self.headerview.RatingImageView.transform = scaleTransform
-                self.headerview.RatingImageView.alpha = 0
-                
-                UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.7, options: [], animations: {
-                    self.headerview.RatingImageView.transform = .identity
-                    self.headerview.RatingImageView.alpha = 1
-                }, completion: nil)
-            }
-        })
-    }
+    
+         if let rating = segue.identifier {
+             self.restaurant.rating = rating
+             
+             self.headerview.RatingImageView.image = UIImage(named: rating)
+        let scaleTransform = CGAffineTransform.init(scaleX: 0.1, y: 0.1)
+                            self.headerview.RatingImageView.transform = scaleTransform
+                            self.headerview.RatingImageView.alpha = 0
+                            
+                            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.3, initialSpringVelocity: 0.7, options: [], animations: {
+                                self.headerview.RatingImageView.transform = .identity
+                                self.headerview.RatingImageView.alpha = 1
+                            }, completion: nil)
+                        
+                    }
+     }
+    
+                 override var preferredStatusBarStyle: UIStatusBarStyle {
+                               return .lightContent
+                           }
+                       }
 
-                   }
+
 
     /*
     // MARK: - Navigation
