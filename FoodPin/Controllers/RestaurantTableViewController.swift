@@ -55,10 +55,10 @@ class RestaurantTableViewController: UITableViewController {
    cell.locationLabel.text = restaurants[indexPath.row].location
    cell.typeLabel.text = restaurants[indexPath.row].type
            
-           // Solution to Exercise #1
+          
    cell.accessoryType = restaurants[indexPath.row].isVisited ? .checkmark : .none
            
-           // Solution to Exercise #2
+           
            // Use the isHidden property to control the appearance of the heart icon
        //    cell.heartImageView.isHidden = restaurantIsVisited[indexPath.row] ? false : true
            
@@ -101,14 +101,13 @@ class RestaurantTableViewController: UITableViewController {
                 let callAction = UIAlertAction(title: "Call " + "123-000-\(indexPath.row)", style: .default, handler: callActionHandler)
                 optionMenu.addAction(callAction)
                 
-                // Solution to exercise #1
-                // ---
+                
                 // Determine the action tile by examining the status of restaurantIsVisited[indexPath.row]
                 // If it is set to true, we set the title "Undo Check in".
                 
                 let checkActionTitle = (restaurantIsVisited[indexPath.row]) ? "Undo Check in" : "Check in"
                 
-                // Check-in action
+                Check-in action
                 let checkInAction = UIAlertAction(title: checkActionTitle, style: .default, handler: {
                     (action:UIAlertAction!) -> Void in
                     
@@ -116,7 +115,7 @@ class RestaurantTableViewController: UITableViewController {
                     
                     self.restaurantIsVisited[indexPath.row] = (self.restaurantIsVisited[indexPath.row]) ? false : true
                     
-                    // Solution to exercise #1
+                    
                     // ---
                     // Toggle the accessoryType and the value of restaurantIsVisited[indexPath.row]
                     // If the value of self.restaurantIsVisited[indexPath.row] is true, we set the accessory type to .none.
@@ -127,7 +126,7 @@ class RestaurantTableViewController: UITableViewController {
                     // ---
                     // Use the isHidden property to control the appearance of the heart icon
                     
-           //      cell.ImageView.isHidden = self.restaurantIsVisited[indexPath.row] ? false : true
+                 cell.ImageView.isHidden = self.restaurantIsVisited[indexPath.row] ? false : true
                     if self.restaurantIsVisited[indexPath.row] {
                       cell.accessoryType =  .checkmark
                     }
