@@ -50,7 +50,7 @@ class RestaurantTableViewController: UITableViewController {
    
            // Configure the cell...
    
-   cell.nameLabel.text = restaurants[indexPath.row].name
+    cell.nameLabel.text = restaurants[indexPath.row].name
    cell.thumbnailImageView.image = UIImage(named: restaurants[indexPath.row].image)
    cell.locationLabel.text = restaurants[indexPath.row].location
    cell.typeLabel.text = restaurants[indexPath.row].type
@@ -228,6 +228,13 @@ class RestaurantTableViewController: UITableViewController {
                             
                             return swipeConfiguration
                 }
+    
+    @IBAction func unwindTOHome ( segue:UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
+    
                      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
                             if segue.identifier == "ShowRestaurantDetails" {
                                 if let indexPath = tableView.indexPathForSelectedRow {
