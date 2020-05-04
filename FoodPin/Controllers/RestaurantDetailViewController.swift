@@ -9,13 +9,13 @@
 import UIKit
 
 class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
-   
+    var restaurant: RestaurantMO!
     
     @IBOutlet var tableview: UITableView!
      @IBOutlet var headerview: RestaurantDetailHeaderView!
  
     
-    var restaurant = Restaurant()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +30,13 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
         
         headerview.nameLabel.text = restaurant.name
         headerview.typeLabel.text = restaurant.type
-        headerview.HeaderImageView.image = UIImage (named: restaurant.image)
-        headerview.RatingImageView.image = UIImage (named: restaurant.rating)
+         if let restaurantImage = restaurant.image {
+                   headerview.HeaderImageView.image = UIImage(data: restaurantImage as Data)
+               }
+        
+        // Display rating
+              
+   //    headerview.RatingImageView.image = UIImage (named: restaurant.rating!)
        //headerview.HeartImageView.isHidden = (restaurant.isVisited)? false : true
        // Set the table view's delegate and data source
        tableview.delegate = self
@@ -41,6 +46,10 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
         // Do any additional setup after loading the view.
         // Configure the table view's style
         tableview.separatorStyle = .none
+        // Display rating
+        if let rating = restaurant.rating {
+            headerview.RatingImageView.image = UIImage(named: rating)
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -92,7 +101,9 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
             
         case 4:
             let cell = tableView.dequeueReusableCell(withIdentifier: String( describing: MapKitTableViewCell.self), for: indexPath) as! MapKitTableViewCell
-            cell.configure(location: restaurant.location)
+           if let restaurantLocation = restaurant.location {
+                cell.configure(location: restaurantLocation)
+            }
         cell.selectionStyle = .none
         return cell
                            default:
@@ -102,6 +113,7 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
             
                            }
                        }
+    
     override func prepare( for segue: UIStoryboardSegue, sender: Any?) {
            if segue.identifier == "showMap" {
                let destinationcontroller = segue.destination as! MapViewController; destinationcontroller.restaurant = restaurant
@@ -117,11 +129,14 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
        }
        
     @IBAction func rateRestaurant(segue: UIStoryboardSegue) {
-    
+        dismiss(animated: true, completion: {
          if let rating = segue.identifier {
              self.restaurant.rating = rating
              
              self.headerview.RatingImageView.image = UIImage(named: rating)
+            if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+                               appDelegate.saveContext()
+                           }
         let scaleTransform = CGAffineTransform.init(scaleX: 0.1, y: 0.1)
                             self.headerview.RatingImageView.transform = scaleTransform
                             self.headerview.RatingImageView.alpha = 0
@@ -130,9 +145,11 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
                                 self.headerview.RatingImageView.transform = .identity
                                 self.headerview.RatingImageView.alpha = 1
                             }, completion: nil)
-                        
-                    }
+            }
+                    })
      }
+
+    
     
                  override var preferredStatusBarStyle: UIStatusBarStyle {
                                return .lightContent

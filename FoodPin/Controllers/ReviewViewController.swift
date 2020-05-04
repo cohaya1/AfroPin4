@@ -7,20 +7,22 @@
 //
 
 import UIKit
-protocol SideSelectionDelegate {
-    func didTapChoice( image: UIImage)
-}
+//protocol SideSelectionDelegate {
+//    func didTapChoice( image: UIImage)
+//}
 class ReviewViewController: UIViewController {
-    var selectiondelegate: SideSelectionDelegate!
+   // var selectiondelegate: SideSelectionDelegate!
     
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var rateButtons: [UIButton]!
     @IBOutlet var closeButton: UIButton!
     
-    var restaurant = Restaurant()
+    var restaurant: RestaurantMO!
     override func viewDidLoad() {
         super.viewDidLoad()
-        backgroundImageView.image = UIImage(named: restaurant.image)
+         if let restaurantImage = restaurant.image {
+                   backgroundImageView.image = UIImage(data: restaurantImage as Data)
+               }
         // Do any additional setup after loading the view.
         // Applying the blur effect
         // Applying the blur effect

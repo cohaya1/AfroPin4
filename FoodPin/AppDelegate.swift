@@ -18,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let backbuttonimage = UIImage ( named: "back")
         UINavigationBar.appearance().backIndicatorImage = backbuttonimage
         UINavigationBar.appearance().backIndicatorTransitionMaskImage = backbuttonimage
+        UITabBar.appearance().tintColor = UIColor(red: 231, green: 76, blue: 60)
+        UITabBar.appearance().barTintColor = UIColor.black
+        
         //let tableview2 = UITableView()
        // tableview2.contentInsetAdjustmentBehavior = .never
         UIApplication.shared.statusBarStyle = .lightContent

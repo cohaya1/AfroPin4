@@ -5,11 +5,12 @@
         <attribute name="isVisited" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="location" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="rating" optional="YES" attributeType="String"/>
         <attribute name="summary" attributeType="String"/>
         <attribute name="type" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Restaurant" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Restaurant" positionX="-63" positionY="-18" width="128" height="163"/>
     </elements>
 </model>

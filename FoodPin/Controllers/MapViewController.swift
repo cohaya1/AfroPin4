@@ -16,7 +16,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     var currentPlacemark: CLPlacemark?
     var currentTransportType = MKDirectionsTransportType.automobile
     var currentRoute: MKRoute?
-    var restaurant = Restaurant()
+    var restaurant: RestaurantMO!
     let locationmanager = CLLocationManager()
     
    override func viewDidLoad() {
@@ -42,7 +42,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
             
             // Convert address to coordinate and annotate it on map
             let geoCoder = CLGeocoder()
-            geoCoder.geocodeAddressString(restaurant.location, completionHandler: { placemarks, error in
+            geoCoder.geocodeAddressString(restaurant.location ?? "", completionHandler: { placemarks, error in
                 if let error = error {
                     print(error)
                     return
@@ -115,7 +115,9 @@ class MapViewController: UIViewController,MKMapViewDelegate {
              }
              
              let leftIconView = UIImageView(frame: CGRect.init(x: 0, y: 0, width: 53, height: 53))
-             leftIconView.image = UIImage(named: restaurant.image)
+            if let restaurantImage = restaurant.image{
+            leftIconView.image = UIImage(data: restaurantImage as Data)
+            }
              annotationView?.leftCalloutAccessoryView = leftIconView
              annotationView?.rightCalloutAccessoryView = UIButton(type: UIButton.ButtonType.detailDisclosure)
          
