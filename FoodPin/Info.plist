@@ -4,6 +4,11 @@
 <dict>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Access to Addition Library</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoadsInWebContent</key>
+		<true/>
+	</dict>
 	<key>NSCameraUsageDescription</key>
 	<string>Acces to Camera</string>
 	<key>NSPhotoLibraryUsageDescription</key>

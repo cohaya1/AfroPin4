@@ -7,19 +7,27 @@
 //
 
 import UIKit
-import SceneKit
-import ARKit
+
 import RealityKit
 
-class RateEmojiViewController: UIViewController, ARSCNViewDelegate{
-@IBOutlet var sceneView: ARSCNView!
+class RateEmojiViewController: UIViewController {
+
+    @IBOutlet  var arView : ARView!
+   
+    var emojianchor: Emoji.SceneEmoji!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        sceneView.delegate = self
+       emojianchor = try! Emoji.loadSceneEmoji()
+        emojianchor.generateCollisionShapes(recursive: true)
+         arView.scene.anchors.append(emojianchor)
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func StartExperience(_ sender: Any) {
+        emojianchor.notifications.startEmoji.post()
+    }
+    
     /*
     // MARK: - Navigation
 
