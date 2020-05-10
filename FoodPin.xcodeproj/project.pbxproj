@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D297A2B2465C10000425E88 /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1D297A2A2465C10000425E88 /* Food101.mlmodel */; };
+		1D297A2D2465EA7B00425E88 /* emojiyum.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1D297A2C2465EA7A00425E88 /* emojiyum.scn */; };
+		1D297A2F2465F09200425E88 /* RateEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D83945C245A84A3000D4F80 /* RateEmojiViewController.swift */; };
+		1D297A312465F0A500425E88 /* emojiyum.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1D297A2C2465EA7A00425E88 /* emojiyum.scn */; };
+		1D297A322465F0A600425E88 /* emojiyum.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1D297A2C2465EA7A00425E88 /* emojiyum.scn */; };
+		1D297A332465F19400425E88 /* RateEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D83945C245A84A3000D4F80 /* RateEmojiViewController.swift */; };
+		1D297A352467750C00425E88 /* ArRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D297A342467750C00425E88 /* ArRateViewController.swift */; };
+		1D297A3724677D8700425E88 /* OBJ thinking.scn in Resources */ = {isa = PBXBuildFile; fileRef = 1D297A3624677D8700425E88 /* OBJ thinking.scn */; };
 		1D40AD3423D2525300FDB4C6 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40AD3323D2525300FDB4C6 /* Restaurant.swift */; };
 		1D40AD8323D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD7F23D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf */; };
 		1D40AD8423D7DD3400FDB4C6 /* RestaurantMenuHollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD8023D7DD3400FDB4C6 /* RestaurantMenuHollow.ttf */; };
@@ -19,7 +27,6 @@
 		1D40AD9023DB94CE00FDB4C6 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD8F23DB94CE00FDB4C6 /* Rubik-Light.ttf */; };
 		1D40AD9223DB95E600FDB4C6 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40AD9123DB95E600FDB4C6 /* RestaurantDetailTextCell.swift */; };
 		1D5B105B23D0DCCA009DCE45 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */; };
-		1D6518792463288500DDCE48 /* emoji.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 1D6518782463288500DDCE48 /* emoji.rcproject */; };
 		1D6A507D245E2AA9007F434D /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6A507C245E2AA9007F434D /* OnBoarding.storyboard */; };
 		1D6A507F245F2F88007F434D /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A507E245F2F88007F434D /* WalkthroughViewController.swift */; };
 		1D6A5081245F3626007F434D /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A5080245F3626007F434D /* WalkthroughPageViewController.swift */; };
@@ -69,6 +76,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D297A2A2465C10000425E88 /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
+		1D297A2C2465EA7A00425E88 /* emojiyum.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = emojiyum.scn; sourceTree = "<group>"; };
+		1D297A342467750C00425E88 /* ArRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArRateViewController.swift; sourceTree = "<group>"; };
+		1D297A3624677D8700425E88 /* OBJ thinking.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = "OBJ thinking.scn"; sourceTree = "<group>"; };
 		1D40AD3323D2525300FDB4C6 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		1D40AD7F23D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RestaurantMenuBookCollege.ttf; sourceTree = "<group>"; };
 		1D40AD8023D7DD3400FDB4C6 /* RestaurantMenuHollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RestaurantMenuHollow.ttf; sourceTree = "<group>"; };
@@ -81,7 +92,6 @@
 		1D40AD8F23DB94CE00FDB4C6 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
 		1D40AD9123DB95E600FDB4C6 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
 		1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
-		1D6518782463288500DDCE48 /* emoji.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = emoji.rcproject; sourceTree = "<group>"; };
 		1D6A507C245E2AA9007F434D /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		1D6A507E245F2F88007F434D /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		1D6A5080245F3626007F434D /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +156,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D297A2E2465EA8A00425E88 /* models and scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1D297A2A2465C10000425E88 /* Food101.mlmodel */,
+				1D297A2C2465EA7A00425E88 /* emojiyum.scn */,
+				1D297A3624677D8700425E88 /* OBJ thinking.scn */,
+			);
+			path = "models and scenes";
+			sourceTree = "<group>";
+		};
 		1D40AD7E23D7DCB500FDB4C6 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,18 +271,19 @@
 			isa = PBXGroup;
 			children = (
 				1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */,
+				1D297A2E2465EA8A00425E88 /* models and scenes */,
 				1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */,
 				1D6CEAA3242D02F600325A55 /* MapViewController.swift */,
 				1D6CEAA5242E90B800325A55 /* ReviewViewController.swift */,
 				1D894F122432471500EA14DE /* RouteTableViewController.swift */,
 				1D894F1A2437E96600EA14DE /* NewRestaurantTableViewController.swift */,
-				1D6518782463288500DDCE48 /* emoji.rcproject */,
 				1D83945C245A84A3000D4F80 /* RateEmojiViewController.swift */,
 				1D6A507E245F2F88007F434D /* WalkthroughViewController.swift */,
 				1D6A5080245F3626007F434D /* WalkthroughPageViewController.swift */,
 				1D6A5082245F36FB007F434D /* WalkthroughContentViewController.swift */,
 				1D6A509124609222007F434D /* AboutTableTableViewController.swift */,
 				1D6A50932460A3C2007F434D /* WebViewController.swift */,
+				1D297A342467750C00425E88 /* ArRateViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -401,7 +422,9 @@
 				1D6A5090245FC653007F434D /* About.storyboard in Resources */,
 				1D40AD8A23D80AF000FDB4C6 /* Rubik-Regular.ttf in Resources */,
 				1D40AD8323D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf in Resources */,
+				1D297A3724677D8700425E88 /* OBJ thinking.scn in Resources */,
 				1D8EBB0923B504C100A95F13 /* Assets.xcassets in Resources */,
+				1D297A2D2465EA7B00425E88 /* emojiyum.scn in Resources */,
 				1D40AD9023DB94CE00FDB4C6 /* Rubik-Light.ttf in Resources */,
 				1D6A508D245FB9A9007F434D /* Discover.storyboard in Resources */,
 				1D8EBB0723B504BF00A95F13 /* Main.storyboard in Resources */,
@@ -413,6 +436,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D297A322465F0A600425E88 /* emojiyum.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D297A312465F0A500425E88 /* emojiyum.scn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +466,8 @@
 				1D6A509224609222007F434D /* AboutTableTableViewController.swift in Sources */,
 				1D83945D245A84A3000D4F80 /* RateEmojiViewController.swift in Sources */,
 				1D6CEAA02429B95500325A55 /* SeparatorTableViewCell.swift in Sources */,
+				1D297A352467750C00425E88 /* ArRateViewController.swift in Sources */,
+				1D297A2B2465C10000425E88 /* Food101.mlmodel in Sources */,
 				1D894F26243BEE3C00EA14DE /* FoodPin.xcdatamodeld in Sources */,
 				1D40AD3423D2525300FDB4C6 /* Restaurant.swift in Sources */,
 				1D6A50942460A3C2007F434D /* WebViewController.swift in Sources */,
@@ -449,7 +476,6 @@
 				1D5B105B23D0DCCA009DCE45 /* RestaurantDetailViewController.swift in Sources */,
 				1D8EBB0223B504BF00A95F13 /* SceneDelegate.swift in Sources */,
 				1D6A507F245F2F88007F434D /* WalkthroughViewController.swift in Sources */,
-				1D6518792463288500DDCE48 /* emoji.rcproject in Sources */,
 				1D8EBB3023B55A6800A95F13 /* RestaurantTableViewController.swift in Sources */,
 				1D6CEA9B24294CFE00325A55 /* UINavigationController+ext.swift in Sources */,
 				1D6CEA942425162B00325A55 /* UIColor+ext.swift in Sources */,
@@ -464,6 +490,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D8EBB1723B504C100A95F13 /* FoodPinTests.swift in Sources */,
+				1D297A332465F19400425E88 /* RateEmojiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D8EBB2223B504C100A95F13 /* FoodPinUITests.swift in Sources */,
+				1D297A2F2465F09200425E88 /* RateEmojiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
