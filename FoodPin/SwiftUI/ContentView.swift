@@ -41,7 +41,7 @@ class observer : ObservableObject{
     
     init() {
         
-        let url1 = "https://developers.zomato.com/api/v2.1/geocode?lat=33.4473&lon=84.1469%C2%B0"
+        let url1 = "https://developers.zomato.com/api/v2.1/geocode?lat=33.4921728&lon=-84.19737599999999"
         let api = "64d2d705881152ccb8e4cfa15f6dc722"
         
         let url = URL(string: url1)
