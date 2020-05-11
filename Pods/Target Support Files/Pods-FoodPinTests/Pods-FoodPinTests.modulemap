@@ -1,0 +1,6 @@
+framework module Pods_FoodPinTests {
+  umbrella header "Pods-FoodPinTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
