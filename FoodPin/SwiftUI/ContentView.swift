@@ -71,9 +71,9 @@ class observer : ObservableObject{
             }
             catch{
                 
-                print("Fetch failed:\(error.localizedDescription)"
+                print(error)
                 
-            )}
+            }
             
         }.resume()
 

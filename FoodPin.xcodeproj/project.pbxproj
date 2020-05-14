@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,8 @@
 		1D6A5090245FC653007F434D /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6A508E245FC653007F434D /* About.storyboard */; };
 		1D6A509224609222007F434D /* AboutTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A509124609222007F434D /* AboutTableTableViewController.swift */; };
 		1D6A50942460A3C2007F434D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A50932460A3C2007F434D /* WebViewController.swift */; };
+		1D6A98E3246CB227008E4525 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98E2246CB227008E4525 /* DiscoverTableViewController.swift */; };
+		1D6A98E5246CC09B008E4525 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98E4246CC09B008E4525 /* DiscoverTableViewCell.swift */; };
 		1D6CEA942425162B00325A55 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEA932425162B00325A55 /* UIColor+ext.swift */; };
 		1D6CEA9B24294CFE00325A55 /* UINavigationController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEA9A24294CFE00325A55 /* UINavigationController+ext.swift */; };
 		1D6CEA9E2429691500325A55 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6CEA9D2429691500325A55 /* MapKit.framework */; };
@@ -110,6 +112,8 @@
 		1D6A509124609222007F434D /* AboutTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableTableViewController.swift; sourceTree = "<group>"; };
 		1D6A50932460A3C2007F434D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		1D6A50952460C3D5007F434D /* NaijaFoodPin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NaijaFoodPin.entitlements; sourceTree = "<group>"; };
+		1D6A98E2246CB227008E4525 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
+		1D6A98E4246CC09B008E4525 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		1D6CEA932425162B00325A55 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		1D6CEA9A24294CFE00325A55 /* UINavigationController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ext.swift"; sourceTree = "<group>"; };
 		1D6CEA9D2429691500325A55 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -218,6 +222,7 @@
 				1D40AD9123DB95E600FDB4C6 /* RestaurantDetailTextCell.swift */,
 				1D6CEA9F2429B95500325A55 /* SeparatorTableViewCell.swift */,
 				1D6CEAA1242A59E600325A55 /* MapKitTableViewCell.swift */,
+				1D6A98E4246CC09B008E4525 /* DiscoverTableViewCell.swift */,
 			);
 			path = "Table Cells";
 			sourceTree = "<group>";
@@ -278,6 +283,7 @@
 				1DFB90402422936000D41F10 /* Storyboards */,
 				1D8EBB0823B504C100A95F13 /* Assets.xcassets */,
 				1D8EBB0D23B504C100A95F13 /* Info.plist */,
+				1D297A2E2465EA8A00425E88 /* models and scenes */,
 				1D40AD9323DB95FE00FDB4C6 /* Table Cells */,
 				1DFB903E242292B500D41F10 /* Controllers */,
 				1DFB903F2422933700D41F10 /* View Model */,
@@ -307,7 +313,6 @@
 			isa = PBXGroup;
 			children = (
 				1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */,
-				1D297A2E2465EA8A00425E88 /* models and scenes */,
 				1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */,
 				1D6CEAA3242D02F600325A55 /* MapViewController.swift */,
 				1D6CEAA5242E90B800325A55 /* ReviewViewController.swift */,
@@ -320,6 +325,7 @@
 				1D6A509124609222007F434D /* AboutTableTableViewController.swift */,
 				1D6A50932460A3C2007F434D /* WebViewController.swift */,
 				1D297A442467C03700425E88 /* RealContentViewController.swift */,
+				1D6A98E2246CB227008E4525 /* DiscoverTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -443,7 +449,7 @@
 				};
 			};
 			buildConfigurationList = 1D8EBAF723B504BF00A95F13 /* Build configuration list for PBXProject "FoodPin" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.4";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -607,9 +613,11 @@
 				1D6A507F245F2F88007F434D /* WalkthroughViewController.swift in Sources */,
 				1D8EBB3023B55A6800A95F13 /* RestaurantTableViewController.swift in Sources */,
 				1D297A3C2467A15C00425E88 /* ContentView.swift in Sources */,
+				1D6A98E3246CB227008E4525 /* DiscoverTableViewController.swift in Sources */,
 				1D6CEA9B24294CFE00325A55 /* UINavigationController+ext.swift in Sources */,
 				1D6CEA942425162B00325A55 /* UIColor+ext.swift in Sources */,
 				1D297A452467C03700425E88 /* RealContentViewController.swift in Sources */,
+				1D6A98E5246CC09B008E4525 /* DiscoverTableViewCell.swift in Sources */,
 				1D6A5083245F36FB007F434D /* WalkthroughContentViewController.swift in Sources */,
 				1D6CEAA4242D02F600325A55 /* MapViewController.swift in Sources */,
 				1D894F132432471500EA14DE /* RouteTableViewController.swift in Sources */,
@@ -805,7 +813,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.lma.FoodPin;
+				PRODUCT_BUNDLE_IDENTIFIER = Chika.com.company.lma.FoodPin;
 				PRODUCT_NAME = NaijaFoodPin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -824,7 +832,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.company.lma.FoodPin;
+				PRODUCT_BUNDLE_IDENTIFIER = Chika.com.company.lma.FoodPin;
 				PRODUCT_NAME = NaijaFoodPin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
