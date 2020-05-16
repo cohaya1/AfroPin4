@@ -13,6 +13,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     @IBOutlet var mapView2 : MKMapView!
     @IBOutlet var ExitMapButton : UIButton!
     @IBOutlet var segmentedcontrol : UISegmentedControl!
+    @IBOutlet weak var NearbyButton : UIButton!
     var currentPlacemark: CLPlacemark?
     var currentTransportType = MKDirectionsTransportType.automobile
     var currentRoute: MKRoute?

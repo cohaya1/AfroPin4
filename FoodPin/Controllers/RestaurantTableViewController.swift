@@ -75,7 +75,7 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
                    tableView.tableHeaderView = searchController.searchBar
                    searchController.searchResultsUpdater = self
                    searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search restaurants..."
+        searchController.searchBar.placeholder = NSLocalizedString("Search restaurants...", comment: "Search restaurants...")
                searchController.searchBar.barTintColor = .white
                searchController.searchBar.backgroundImage = UIImage()
         searchController.searchBar.tintColor = UIColor(red: 70, green: 76, blue: 60,alpha: 1.0)
@@ -300,7 +300,7 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
                         
                         override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
                             
-                            let checkInAction = UIContextualAction(style: .normal, title: "Check-in") { (action, sourceView, completionHandler) in
+                             let checkInAction = UIContextualAction(style: .normal, title: NSLocalizedString("Check-in", comment: "Check-in")) { (action, sourceView, completionHandler) in
                                 
                                 _ = tableView.cellForRow(at: indexPath) as! RestaurantTableViewCell
                                 self.restaurants[indexPath.row].isVisited = (self.restaurants[indexPath.row].isVisited) ? false : true

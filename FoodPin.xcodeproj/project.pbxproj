@@ -43,6 +43,7 @@
 		1D6A50942460A3C2007F434D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A50932460A3C2007F434D /* WebViewController.swift */; };
 		1D6A98E3246CB227008E4525 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98E2246CB227008E4525 /* DiscoverTableViewController.swift */; };
 		1D6A98E5246CC09B008E4525 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98E4246CC09B008E4525 /* DiscoverTableViewCell.swift */; };
+		1D6A98E7246E464E008E4525 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98E6246E464E008E4525 /* LoginView.swift */; };
 		1D6CEA942425162B00325A55 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEA932425162B00325A55 /* UIColor+ext.swift */; };
 		1D6CEA9B24294CFE00325A55 /* UINavigationController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEA9A24294CFE00325A55 /* UINavigationController+ext.swift */; };
 		1D6CEA9E2429691500325A55 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6CEA9D2429691500325A55 /* MapKit.framework */; };
@@ -114,6 +115,7 @@
 		1D6A50952460C3D5007F434D /* NaijaFoodPin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NaijaFoodPin.entitlements; sourceTree = "<group>"; };
 		1D6A98E2246CB227008E4525 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		1D6A98E4246CC09B008E4525 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
+		1D6A98E6246E464E008E4525 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		1D6CEA932425162B00325A55 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		1D6CEA9A24294CFE00325A55 /* UINavigationController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ext.swift"; sourceTree = "<group>"; };
 		1D6CEA9D2429691500325A55 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				1D297A3B2467A15C00425E88 /* ContentView.swift */,
+				1D6A98E6246E464E008E4525 /* LoginView.swift */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -613,6 +616,7 @@
 				1D6A507F245F2F88007F434D /* WalkthroughViewController.swift in Sources */,
 				1D8EBB3023B55A6800A95F13 /* RestaurantTableViewController.swift in Sources */,
 				1D297A3C2467A15C00425E88 /* ContentView.swift in Sources */,
+				1D6A98E7246E464E008E4525 /* LoginView.swift in Sources */,
 				1D6A98E3246CB227008E4525 /* DiscoverTableViewController.swift in Sources */,
 				1D6CEA9B24294CFE00325A55 /* UINavigationController+ext.swift in Sources */,
 				1D6CEA942425162B00325A55 /* UIColor+ext.swift in Sources */,
@@ -813,7 +817,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Chika.com.company.lma.FoodPin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.lma.FoodPin;
 				PRODUCT_NAME = NaijaFoodPin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -832,7 +836,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Chika.com.company.lma.FoodPin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.lma.FoodPin;
 				PRODUCT_NAME = NaijaFoodPin;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -5,18 +5,20 @@
 //  Created by Makaveli Ohaya on 5/13/20.
 //  Copyright © 2020 Makaveli Ohaya. All rights reserved.
 //
+
 import CloudKit
 import UIKit
 
 class DiscoverTableViewController: UITableViewController {
     var restaurants: [CKRecord] = []
     var spinner = UIActivityIndicatorView()
+    var cell = DiscoverTableViewCell()
     
     private var imageCache = NSCache<CKRecord.ID, NSURL>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
         tableView.cellLayoutMarginsFollowReadableWidth = true
         navigationController?.navigationBar.prefersLargeTitles = true
         
@@ -25,7 +27,10 @@ class DiscoverTableViewController: UITableViewController {
         navigationController?.navigationBar.shadowImage = UIImage()
         if let customFont = UIFont(name: "Rubik-Medium", size: 40.0) {
             navigationController?.navigationBar.largeTitleTextAttributes = [ NSAttributedString.Key.foregroundColor: UIColor(red: 231, green: 76, blue: 60), NSAttributedString.Key.font: customFont ]
+           
+            
         }
+       
         spinner.style = .gray
             spinner.hidesWhenStopped = true
             view.addSubview(spinner)
@@ -46,8 +51,9 @@ class DiscoverTableViewController: UITableViewController {
             
             // Fetch records from iCloud
             fetchRecordsFromCloud()
+        
         }
-       
+     
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
@@ -67,7 +73,10 @@ class DiscoverTableViewController: UITableViewController {
             let restaurant = restaurants[indexPath.row]
             cell.nameLabel.text = restaurant.object(forKey: "name") as? String
             cell.typeLabel.text = restaurant.object(forKey: "type") as? String
-            cell.phoneLabel.text = restaurant.object(forKey: "phone") as? String
+        cell.phoneLabel.text = restaurant.object(forKey: "phone") as? String
+        cell.phoneLabel.isUserInteractionEnabled = true
+        
+        
             cell.locationLabel.text = restaurant.object(forKey: "location") as? String
             cell.descriptionLabel.text = restaurant.object(forKey: "description") as? String
             
@@ -154,6 +163,11 @@ class DiscoverTableViewController: UITableViewController {
         return true
     }
     */
+    
+    @IBAction func onCallPress(_sender: UIButton){
+        let url:NSURL = URL(string: "TELL//\(String(describing: self.cell.phoneLabel?.text))")! as NSURL; UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+    }
+    
 @objc func fetchRecordsFromCloud() {
         
         // Remove existing records before refreshing

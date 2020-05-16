@@ -11,6 +11,7 @@ import UIKit
 
 class NewRestaurantTableViewController: UITableViewController, UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
      var restaurant: RestaurantMO!
+    var africantype = ["West African","East African", "South African","Caribbean","Soul Food"]
     
      @IBOutlet var photoImageView: UIImageView!
       
@@ -146,16 +147,22 @@ class NewRestaurantTableViewController: UITableViewController, UITextFieldDelega
         
         dismiss(animated: true, completion: nil)
     }
+ 
+  
+    
+
     @IBAction func saveButtonTapped(sender: AnyObject) {
            
            if nameTextField.text == "" || typeTextField.text == "" || addressTextField.text == "" || phoneTextField.text == "" || descriptionTextView.text == "" {
-               let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank. Please note that all fields are required.", preferredStyle: .alert)
+               let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank or is the not the right Restaurant type. Please note that all fields are required.", preferredStyle: .alert)
                let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                alertController.addAction(alertAction)
                present(alertController, animated: true, completion: nil)
                
-               return
+            return
            }
+           
+       
            
            print("Name: \(nameTextField.text ?? "")")
            print("Type: \(typeTextField.text ?? "")")
@@ -183,10 +190,16 @@ class NewRestaurantTableViewController: UITableViewController, UITextFieldDelega
                            print("Saving data to context ...")
                            appDelegate.saveContext()
                        }
-                       
+                       // Save the restaurant to iCloud
+                       saveRecordToCloud(restaurant: restaurant)
                        dismiss(animated: true, completion: nil)
                    }
                }
+//MARK: CHECK FIELDS
+
+
+
+
 func saveRecordToCloud(restaurant:RestaurantMO!) -> Void {
         
         // Prepare the record to save

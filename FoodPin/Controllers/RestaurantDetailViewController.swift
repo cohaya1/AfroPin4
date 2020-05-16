@@ -28,8 +28,8 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
         // adjust contect view to cover safe area code
         tableview.contentInsetAdjustmentBehavior = .never
         
-        headerview.nameLabel.text = restaurant.name
-        headerview.typeLabel.text = restaurant.type
+        headerview.nameLabel?.text = restaurant.name
+        headerview.typeLabel?.text = restaurant.type
          if let restaurantImage = restaurant.image {
                    headerview.HeaderImageView.image = UIImage(data: restaurantImage as Data)
                }

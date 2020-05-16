@@ -9,25 +9,26 @@
 import UIKit
 
 class DiscoverTableViewCell: UITableViewCell {
-
-    @IBOutlet var nameLabel: UILabel! {
+@IBOutlet weak var phonebutton : UIButton!
+    @IBOutlet weak var nameLabel: UILabel! {
             didSet {
                 nameLabel.numberOfLines = 0
             }
         }
-        @IBOutlet var typeLabel: UILabel!
-        @IBOutlet var locationLabel: UILabel! {
+        @IBOutlet weak var typeLabel: UILabel!
+        @IBOutlet weak var locationLabel: UILabel! {
             didSet {
                 locationLabel.numberOfLines = 0
             }
         }
-        @IBOutlet var phoneLabel: UILabel!
+    @IBOutlet var phoneLabel: UILabel!
+    
         @IBOutlet var descriptionLabel: UILabel! {
             didSet {
                 descriptionLabel.numberOfLines = 0
             }
         }
-        @IBOutlet var featuredImageView: UIImageView! {
+        @IBOutlet weak var featuredImageView: UIImageView! {
             didSet {
                 featuredImageView.contentMode = .scaleAspectFill
                 featuredImageView.clipsToBounds = true
