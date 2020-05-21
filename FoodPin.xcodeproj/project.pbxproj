@@ -44,6 +44,14 @@
 		1D6A98E3246CB227008E4525 /* DiscoverTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98E2246CB227008E4525 /* DiscoverTableViewController.swift */; };
 		1D6A98E5246CC09B008E4525 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98E4246CC09B008E4525 /* DiscoverTableViewCell.swift */; };
 		1D6A98E7246E464E008E4525 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98E6246E464E008E4525 /* LoginView.swift */; };
+		1D6A98E924707035008E4525 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98E824707035008E4525 /* PhotoViewController.swift */; };
+		1D6A98ED24735615008E4525 /* NaijaFoodTrial2 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A98EC24735615008E4525 /* NaijaFoodTrial2 1.mlmodel */; };
+		1D6A98EE2475D4F1008E4525 /* FoodPinTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBB1223B504C100A95F13 /* FoodPinTests.xctest */; };
+		1D6A98EF2475D4F3008E4525 /* FoodPinTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBB1223B504C100A95F13 /* FoodPinTests.xctest */; };
+		1D6A98F02475D4F4008E4525 /* FoodPinTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBB1223B504C100A95F13 /* FoodPinTests.xctest */; };
+		1D6A98F12475D4F8008E4525 /* NaijaFoodPin.app in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBAFC23B504BF00A95F13 /* NaijaFoodPin.app */; };
+		1D6A98F22475D4F8008E4525 /* NaijaFoodPin.app in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBAFC23B504BF00A95F13 /* NaijaFoodPin.app */; platformFilter = ios; };
+		1D6A98F32475D4F9008E4525 /* NaijaFoodPin.app in Resources */ = {isa = PBXBuildFile; fileRef = 1D8EBAFC23B504BF00A95F13 /* NaijaFoodPin.app */; platformFilter = ios; };
 		1D6CEA942425162B00325A55 /* UIColor+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEA932425162B00325A55 /* UIColor+ext.swift */; };
 		1D6CEA9B24294CFE00325A55 /* UINavigationController+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEA9A24294CFE00325A55 /* UINavigationController+ext.swift */; };
 		1D6CEA9E2429691500325A55 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D6CEA9D2429691500325A55 /* MapKit.framework */; };
@@ -116,6 +124,8 @@
 		1D6A98E2246CB227008E4525 /* DiscoverTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewController.swift; sourceTree = "<group>"; };
 		1D6A98E4246CC09B008E4525 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
 		1D6A98E6246E464E008E4525 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1D6A98E824707035008E4525 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		1D6A98EC24735615008E4525 /* NaijaFoodTrial2 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "NaijaFoodTrial2 1.mlmodel"; path = "../../../../Desktop/NaijaFoodTrial2 1.mlmodel"; sourceTree = "<group>"; };
 		1D6CEA932425162B00325A55 /* UIColor+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ext.swift"; sourceTree = "<group>"; };
 		1D6CEA9A24294CFE00325A55 /* UINavigationController+ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+ext.swift"; sourceTree = "<group>"; };
 		1D6CEA9D2429691500325A55 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -188,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				1D297A2A2465C10000425E88 /* Food101.mlmodel */,
+				1D6A98EC24735615008E4525 /* NaijaFoodTrial2 1.mlmodel */,
 				1D297A2C2465EA7A00425E88 /* emojiyum.scn */,
 				1D297A3624677D8700425E88 /* OBJ thinking.scn */,
 			);
@@ -329,6 +340,7 @@
 				1D6A50932460A3C2007F434D /* WebViewController.swift */,
 				1D297A442467C03700425E88 /* RealContentViewController.swift */,
 				1D6A98E2246CB227008E4525 /* DiscoverTableViewController.swift */,
+				1D6A98E824707035008E4525 /* PhotoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -483,6 +495,7 @@
 				1D40AD8623D7DD3400FDB4C6 /* RestaurantMenu.ttf in Resources */,
 				1D6A5090245FC653007F434D /* About.storyboard in Resources */,
 				1D40AD8A23D80AF000FDB4C6 /* Rubik-Regular.ttf in Resources */,
+				1D6A98F12475D4F8008E4525 /* NaijaFoodPin.app in Resources */,
 				1D40AD8323D7DD3400FDB4C6 /* RestaurantMenuBookCollege.ttf in Resources */,
 				1D297A3724677D8700425E88 /* OBJ thinking.scn in Resources */,
 				1D8EBB0923B504C100A95F13 /* Assets.xcassets in Resources */,
@@ -490,6 +503,7 @@
 				1D40AD9023DB94CE00FDB4C6 /* Rubik-Light.ttf in Resources */,
 				1D6A508D245FB9A9007F434D /* Discover.storyboard in Resources */,
 				1D8EBB0723B504BF00A95F13 /* Main.storyboard in Resources */,
+				1D6A98EE2475D4F1008E4525 /* FoodPinTests.xctest in Resources */,
 				1D40AD8823D7FDED00FDB4C6 /* Rubik-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,7 +512,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6A98EF2475D4F3008E4525 /* FoodPinTests.xctest in Resources */,
 				1D297A322465F0A600425E88 /* emojiyum.scn in Resources */,
+				1D6A98F22475D4F8008E4525 /* NaijaFoodPin.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,7 +522,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6A98F02475D4F4008E4525 /* FoodPinTests.xctest in Resources */,
 				1D297A312465F0A500425E88 /* emojiyum.scn in Resources */,
+				1D6A98F32475D4F9008E4525 /* NaijaFoodPin.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +641,9 @@
 				1D297A452467C03700425E88 /* RealContentViewController.swift in Sources */,
 				1D6A98E5246CC09B008E4525 /* DiscoverTableViewCell.swift in Sources */,
 				1D6A5083245F36FB007F434D /* WalkthroughContentViewController.swift in Sources */,
+				1D6A98E924707035008E4525 /* PhotoViewController.swift in Sources */,
 				1D6CEAA4242D02F600325A55 /* MapViewController.swift in Sources */,
+				1D6A98ED24735615008E4525 /* NaijaFoodTrial2 1.mlmodel in Sources */,
 				1D894F132432471500EA14DE /* RouteTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

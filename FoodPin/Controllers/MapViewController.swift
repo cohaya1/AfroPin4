@@ -187,6 +187,40 @@ class MapViewController: UIViewController,MKMapViewDelegate {
              
              
          }
+         @IBAction func showNearby(sender: UIButton) {
+            
+             let searchRequest = MKLocalSearch.Request()
+             searchRequest.naturalLanguageQuery = restaurant.type
+            searchRequest.region = mapView2.region
+             
+             let localSearch = MKLocalSearch(request: searchRequest)
+             localSearch.start { (response, error) -> Void in
+                 guard let response = response else {
+                     if let error = error {
+                         print(error)
+                     }
+                     
+                     return
+                 }
+                 
+                 let mapItems = response.mapItems
+                 var nearbyAnnotations: [MKAnnotation] = []
+                 if mapItems.count > 0 {
+                     for item in mapItems {
+                         // Add annotation
+                         let annotation = MKPointAnnotation()
+                         annotation.title = item.name
+                         annotation.subtitle = item.phoneNumber
+                         if let location = item.placemark.location {
+                             annotation.coordinate = location.coordinate
+                         }
+                         nearbyAnnotations.append(annotation)
+                     }
+                 }
+                 
+                 self.mapView2.showAnnotations(nearbyAnnotations, animated: true)
+             }
+         }
          
          // MARK: - Navigation
          
