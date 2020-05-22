@@ -19,7 +19,7 @@ class RateEmojiViewController:  UIViewController, AVCaptureVideoDataOutputSample
         @IBOutlet weak var objectNameLabel: UILabel!
         @IBOutlet weak var accuracyLabel: UILabel!
        
-    var model = NaijaFoodTrial2_1().model
+ var model = Food101().model
         
            
            var backFacingCamera: AVCaptureDevice?
