@@ -31,6 +31,7 @@
 		1D40AD8E23DB8C8500FDB4C6 /* RestaurantDetailIconTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40AD8D23DB8C8500FDB4C6 /* RestaurantDetailIconTextTableViewCell.swift */; };
 		1D40AD9023DB94CE00FDB4C6 /* Rubik-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D40AD8F23DB94CE00FDB4C6 /* Rubik-Light.ttf */; };
 		1D40AD9223DB95E600FDB4C6 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D40AD9123DB95E600FDB4C6 /* RestaurantDetailTextCell.swift */; };
+		1D4BED7E2479BBDA00D15AB6 /* AfroPinScan 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 1D4BED7D2479BBDA00D15AB6 /* AfroPinScan 1.mlmodel */; };
 		1D5B105B23D0DCCA009DCE45 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */; };
 		1D6A507D245E2AA9007F434D /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6A507C245E2AA9007F434D /* OnBoarding.storyboard */; };
 		1D6A507F245F2F88007F434D /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6A507E245F2F88007F434D /* WalkthroughViewController.swift */; };
@@ -68,6 +69,7 @@
 		1D8EBB1723B504C100A95F13 /* FoodPinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB1623B504C100A95F13 /* FoodPinTests.swift */; };
 		1D8EBB2223B504C100A95F13 /* FoodPinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB2123B504C100A95F13 /* FoodPinUITests.swift */; };
 		1D8EBB3023B55A6800A95F13 /* RestaurantTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */; };
+		1DB00A41247B7FC400E4803A /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB00A40247B7FC400E4803A /* LocationViewModel.swift */; };
 		1DEF7FFF23BA7DFF002D98C1 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF7FFE23BA7DFF002D98C1 /* RestaurantTableViewCell.swift */; };
 		F046776DBEE94A2D53804806 /* Pods_FoodPinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50A53AC5D3A6C0495D2FB91 /* Pods_FoodPinTests.framework */; };
 /* End PBXBuildFile section */
@@ -107,6 +109,7 @@
 		1D40AD8D23DB8C8500FDB4C6 /* RestaurantDetailIconTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailIconTextTableViewCell.swift; sourceTree = "<group>"; };
 		1D40AD8F23DB94CE00FDB4C6 /* Rubik-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rubik-Light.ttf"; sourceTree = "<group>"; };
 		1D40AD9123DB95E600FDB4C6 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
+		1D4BED7D2479BBDA00D15AB6 /* AfroPinScan 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = "AfroPinScan 1.mlmodel"; path = "../../../../Desktop/AfroPinScan 1.mlmodel"; sourceTree = "<group>"; };
 		1D5B105A23D0DCCA009DCE45 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		1D6A507C245E2AA9007F434D /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		1D6A507E245F2F88007F434D /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +150,7 @@
 		1D8EBB2123B504C100A95F13 /* FoodPinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodPinUITests.swift; sourceTree = "<group>"; };
 		1D8EBB2323B504C100A95F13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D8EBB2F23B55A6800A95F13 /* RestaurantTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewController.swift; sourceTree = "<group>"; };
+		1DB00A40247B7FC400E4803A /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		1DEF7FFE23BA7DFF002D98C1 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		3128AB8AF364DABB9E81E7C9 /* Pods-FoodPinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodPinUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodPinUITests/Pods-FoodPinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		329F81158023D6E982530B7E /* Pods-FoodPinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodPinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodPinTests/Pods-FoodPinTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -193,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				1D297A2A2465C10000425E88 /* Food101.mlmodel */,
+				1D4BED7D2479BBDA00D15AB6 /* AfroPinScan 1.mlmodel */,
 				1D297A2C2465EA7A00425E88 /* emojiyum.scn */,
 				1D297A3624677D8700425E88 /* OBJ thinking.scn */,
 			);
@@ -345,6 +350,7 @@
 				1D40AD3323D2525300FDB4C6 /* Restaurant.swift */,
 				1D40AD8B23D8A10A00FDB4C6 /* RestaurantDetailHeaderView.swift */,
 				1D894F14243581C900EA14DE /* RoundedTextField.swift */,
+				1DB00A40247B7FC400E4803A /* LocationViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -629,6 +635,8 @@
 				1D297A3C2467A15C00425E88 /* ContentView.swift in Sources */,
 				1D6A98E7246E464E008E4525 /* LoginView.swift in Sources */,
 				1D6A98E3246CB227008E4525 /* DiscoverTableViewController.swift in Sources */,
+				1D4BED7E2479BBDA00D15AB6 /* AfroPinScan 1.mlmodel in Sources */,
+				1DB00A41247B7FC400E4803A /* LocationViewModel.swift in Sources */,
 				1D6CEA9B24294CFE00325A55 /* UINavigationController+ext.swift in Sources */,
 				1D6CEA942425162B00325A55 /* UIColor+ext.swift in Sources */,
 				1D297A452467C03700425E88 /* RealContentViewController.swift in Sources */,

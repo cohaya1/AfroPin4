@@ -44,6 +44,8 @@
 	<string>Acces to Camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>We need to find your current location to set route </string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Pause when restaurants show</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Access to Addition Library</string>
 	<key>NSPhotoLibraryUsageDescription</key>

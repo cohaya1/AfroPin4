@@ -9,21 +9,29 @@
 import SwiftUI
 import SDWebImageSwiftUI
 import WebKit
+import CoreLocation
 
 struct ContentView: View {
     
-    @ObservedObject var obs = observer()
+    //@ObservedObject var obs = observer()
+@ObservedObject var locationViewModel = LocationViewModel()
     
     var body: some View {
         
         NavigationView{
             
-            List(obs.datas){i in
+            List {
+                ForEach(self.locationViewModel.datas, id: \.id) { data in
+                    Card(image: data.image, name: data.name, weburl: data.webUrl)
+                }
+            }.navigationBarTitle("Near By Restaurants")
+            /*
+            List(locationViewModel.datas){i in
                 
-                Card(image: i.image, name: i.name, weburl: i.webUrl, rating: i.rating)
+                Card(image: i.image, name: i.name, weburl: i.webUrl) //rating: i.rating)
                 
             }.navigationBarTitle("Near By Restaurants")
-            
+            */
         }
 
     }
@@ -38,10 +46,13 @@ struct ContentView_Previews: PreviewProvider {
 class observer : ObservableObject{
     
     @Published var datas = [datatype]()
-    
+    @ObservedObject var locationViewModel = LocationViewModel()
     init() {
         
-        let url1 = "https://developers.zomato.com/api/v2.1/geocode?lat=33.4921728&lon=-84.19737599999999"
+        print("Latitude: \(locationViewModel.userLatitude)")
+        print("Longitude: \(locationViewModel.userLongitude)")
+        
+        let url1 = "https://developers.zomato.com/api/v2.1/geocode?lat=\(locationViewModel.userLatitude)=\(locationViewModel.userLongitude)"
         let api = "64d2d705881152ccb8e4cfa15f6dc722"
         
         let url = URL(string: url1)
@@ -64,7 +75,8 @@ class observer : ObservableObject{
                     
                     DispatchQueue.main.async {
                         
-                        self.datas.append(datatype(id: i.restaurant.id, name: i.restaurant.name, image: i.restaurant.thumb, rating: i.restaurant.user_rating.aggregate_rating, webUrl: i.restaurant.url))
+                        self.datas.append(datatype(id: i.restaurant.id, name: i.restaurant.name, image: i.restaurant.thumb, //rating: //i.restaurant.user_rating.aggregate_rating,//
+                            webUrl: i.restaurant.url))
                     }
 
                 }
@@ -80,12 +92,12 @@ class observer : ObservableObject{
     }
 }
 
-struct datatype : Identifiable {
+struct datatype : Codable,Identifiable {
     
     var id : String
     var name : String
     var image : String
-    var rating : String
+ //   var rating : String
     var webUrl : String
 }
 
@@ -107,32 +119,36 @@ struct Type2 : Decodable {
     var name : String
     var url : String
     var thumb : String
-    var user_rating : Type3
+    
+ //   var user_rating : Type3
 }
 struct Type3 : Decodable {
     
-    var aggregate_rating : String
+//    var aggregate_rating : Int
 }
+
 
 struct Card : View {
     
     var image = ""
     var name = ""
     var weburl = ""
-    var rating = ""
+  //  var rating = ""
     
     var body : some View{
 
         NavigationLink(destination: register(url: weburl, name: name)) {
             
             HStack{
-                
-                AnimatedImage(url: URL(string: image)!).padding(.all).frame(width: 100, height: 100).cornerRadius(10)
+                if image != "" {
+                    AnimatedImage(url: URL(string: image)!).padding(.all).frame(width: 100, height: 100).cornerRadius(10)
+                }
+               
                 
                 VStack(alignment: .leading) {
                     
                     Text(name).fontWeight(.heavy)
-                    Text(rating)
+               //     Text(rating)
                 }.padding(.vertical, 10)
                 
             }

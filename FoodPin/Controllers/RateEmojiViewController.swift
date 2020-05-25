@@ -19,7 +19,7 @@ class RateEmojiViewController:  UIViewController, AVCaptureVideoDataOutputSample
         @IBOutlet weak var objectNameLabel: UILabel!
         @IBOutlet weak var accuracyLabel: UILabel!
        
- var model = Food101().model
+ var model = AfroPinScan_1().model
         
            
            var backFacingCamera: AVCaptureDevice?
@@ -90,29 +90,13 @@ class RateEmojiViewController:  UIViewController, AVCaptureVideoDataOutputSample
         
     }
 
-    @IBAction func capture(sender: UIButton) {
-        // Set photo settings
-        let photoSettings = AVCapturePhotoSettings(format: [AVVideoCodecKey: AVVideoCodecType.jpeg])
-        photoSettings.isAutoStillImageStabilizationEnabled = true
-        photoSettings.isHighResolutionPhotoEnabled = true
-        photoSettings.flashMode = .auto
-        
-        stillImageOutput?.isHighResolutionCaptureEnabled = true
-        stillImageOutput?.capturePhoto(with: photoSettings, delegate: self)
-    }
+    
     // MARK: - Segues
     
     @IBAction func unwindToCameraView(segue: UIStoryboardSegue) {
     
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            // Get the new view controller using segue.destinationViewController.
-            // Pass the selected object to the new view controller.
-            if segue.identifier == "ShowPhoto" {
-                let photoViewController = segue.destination as! PhotoViewController
-                photoViewController.image = stillImage
-            }
-        }
+   
         
         // MARK: - Configuration
         
@@ -205,21 +189,7 @@ class RateEmojiViewController:  UIViewController, AVCaptureVideoDataOutputSample
 
            
            
-    extension RateEmojiViewController {
-        func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
-            guard error == nil else {
-                return
-            }
-            
-            // Get the image from the photo buffer
-            guard let imageData = photo.fileDataRepresentation() else {
-                return
-            }
-            
-            stillImage = UIImage(data: imageData)
-            performSegue(withIdentifier: "ShowPhoto", sender: self)
-        }
-    }
+    
 
         
         

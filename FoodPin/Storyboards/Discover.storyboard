@@ -96,18 +96,8 @@
                                                                         <constraint firstAttribute="height" constant="20" id="vvy-38-RAx"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPk-gc-6fx">
-                                                                    <rect key="frame" x="35" y="0.0" width="32" height="20"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="32" id="lKS-D2-Elo"/>
-                                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="xoU-h4-PgP"/>
-                                                                    </constraints>
-                                                                    <connections>
-                                                                        <action selector="onCallPressWith_sender:" destination="tcZ-a5-aJO" eventType="primaryActionTriggered" id="vYp-HH-HHE"/>
-                                                                    </connections>
-                                                                </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP8-bs-MZe">
-                                                                    <rect key="frame" x="82" y="0.0" width="332" height="20"/>
+                                                                    <rect key="frame" x="35" y="0.0" width="379" height="20"/>
                                                                     <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="14"/>
                                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -138,7 +128,6 @@
                                     <outlet property="locationLabel" destination="SUi-jZ-udJ" id="S98-vF-mKv"/>
                                     <outlet property="nameLabel" destination="hgA-7d-dQP" id="ftf-7E-8PR"/>
                                     <outlet property="phoneLabel" destination="EP8-bs-MZe" id="gQQ-wn-lqm"/>
-                                    <outlet property="phonebutton" destination="cPk-gc-6fx" id="u01-xZ-IYn"/>
                                     <outlet property="typeLabel" destination="Jcg-vo-8qA" id="oiO-qH-h3z"/>
                                 </connections>
                             </tableViewCell>
