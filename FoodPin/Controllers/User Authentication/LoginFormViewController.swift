@@ -5,7 +5,8 @@
 //  Created by Makaveli Ohaya on 5/26/20.
 //  Copyright © 2020 Makaveli Ohaya. All rights reserved.
 //
-
+import FirebaseAuth
+import Firebase
 import UIKit
 
 class LoginFormViewController: UIViewController {
@@ -18,6 +19,7 @@ class LoginFormViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    var spinner = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
       setUpElements()
@@ -36,9 +38,43 @@ class LoginFormViewController: UIViewController {
     }
     
     @IBAction func loginTapped(_ sender: Any) {
+        spinner.style = .gray
+        spinner.hidesWhenStopped = true
+        view.addSubview(spinner)
         
-    }
-    
+        // Define layout constraints for the spinner
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([ spinner.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 150.0),
+                                      spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor)])
+        
+        // Activate the spinner
+        spinner.startAnimating()
+        
+     let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+                
+                // Signing in the user
+                Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                    
+                    if error != nil {
+                        // Couldn't sign in
+                        self.errorLabel.text = error!.localizedDescription
+                        self.errorLabel.alpha = 1
+                        self.spinner.stopAnimating()
+                    }
+                    else {
+                          self.spinner.stopAnimating()
+                        let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController)
+                                   self.navigationController?.pushViewController(homeViewController!, animated: true)
+                        self.view.window?.rootViewController = homeViewController
+                        self.view.window?.makeKeyAndVisible()
+                        
+                    }
+                }
+            }
+            
+        }
+
 
     /*
     // MARK: - Navigation
@@ -50,4 +86,4 @@ class LoginFormViewController: UIViewController {
     }
     */
 
-}
+

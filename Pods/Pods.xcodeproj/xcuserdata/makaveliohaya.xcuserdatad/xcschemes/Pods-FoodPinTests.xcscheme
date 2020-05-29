@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1140"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD6F3414A8BBFCBB47A6155A92180FA0"
+               BlueprintIdentifier = "A7A38246C4822E7F18932237157C69FF"
                BuildableName = "Pods_FoodPinTests.framework"
                BlueprintName = "Pods-FoodPinTests"
                ReferencedContainer = "container:Pods.xcodeproj">

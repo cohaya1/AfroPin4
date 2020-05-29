@@ -1,25 +1,26 @@
 //
-//  RateEmojiViewController.swift
+//  AmericanFoodViewController.swift
 //  FoodPin
 //
-//  Created by Makaveli Ohaya on 4/29/20.
+//  Created by Makaveli Ohaya on 5/28/20.
 //  Copyright © 2020 Makaveli Ohaya. All rights reserved.
 //
+
 import UIKit
 import AVKit
 import Vision
 import AVFoundation
 
-class RateEmojiViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCapturePhotoCaptureDelegate{
+class AmericanFoodViewController:  UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCapturePhotoCaptureDelegate{
      override var prefersStatusBarHidden: Bool {
             return true
         }
-        @IBOutlet weak var cameraButton:UIButton!
+      //  @IBOutlet weak var cameraButton:UIButton!
         @IBOutlet weak var belowView: UIView!
         @IBOutlet weak var objectNameLabel: UILabel!
         @IBOutlet weak var accuracyLabel: UILabel!
        
-    var model = AfroPinScan_1().model
+    var model = Food101().model
         
            
            var backFacingCamera: AVCaptureDevice?
@@ -118,7 +119,7 @@ class RateEmojiViewController:  UIViewController, AVCaptureVideoDataOutputSample
 
             currentDevice = backFacingCamera
 
-            guard let captureDeviceInput = try? AVCaptureDeviceInput(device: currentDevice) else {
+            guard (try? AVCaptureDeviceInput(device: currentDevice)) != nil else {
                 return
             }
 
@@ -133,7 +134,7 @@ class RateEmojiViewController:  UIViewController, AVCaptureVideoDataOutputSample
             
 
             // Bring the camera button to front
-            view.bringSubviewToFront(cameraButton)
+      //      view.bringSubviewToFront(cameraButton)
            // captureSession.startRunning()
             
             // Toggle Camera recognizer
@@ -187,13 +188,4 @@ class RateEmojiViewController:  UIViewController, AVCaptureVideoDataOutputSample
         }
     }
 
-           
-           
-    
-
-        
-        
-
-        
-
-    
+          

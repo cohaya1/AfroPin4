@@ -5,6 +5,8 @@
 //  Created by Makaveli Ohaya on 5/4/20.
 //  Copyright © 2020 Makaveli Ohaya. All rights reserved.
 //
+import FirebaseAuth
+import Firebase
 import SafariServices
 import UIKit
 

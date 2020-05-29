@@ -55,6 +55,7 @@
 		1D6CEAA2242A59E600325A55 /* MapKitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEAA1242A59E600325A55 /* MapKitTableViewCell.swift */; };
 		1D6CEAA4242D02F600325A55 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEAA3242D02F600325A55 /* MapViewController.swift */; };
 		1D6CEAA6242E90B800325A55 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEAA5242E90B800325A55 /* ReviewViewController.swift */; };
+		1D7D06E72480A4A1006C9606 /* AmericanFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D06E62480A4A1006C9606 /* AmericanFoodViewController.swift */; };
 		1D83945D245A84A3000D4F80 /* RateEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D83945C245A84A3000D4F80 /* RateEmojiViewController.swift */; };
 		1D894F132432471500EA14DE /* RouteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D894F122432471500EA14DE /* RouteTableViewController.swift */; };
 		1D894F15243581C900EA14DE /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D894F14243581C900EA14DE /* RoundedTextField.swift */; };
@@ -73,6 +74,9 @@
 		1DB00A46247C53B100E4803A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB00A45247C53B100E4803A /* SignUpViewController.swift */; };
 		1DB00A48247E13DD00E4803A /* LoginFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB00A47247E13DD00E4803A /* LoginFormViewController.swift */; };
 		1DB00A4B247E1AC900E4803A /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB00A4A247E1AC900E4803A /* Utilities.swift */; };
+		1DB1AA7B247EEB64004184EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DB1AA7A247EEB64004184EF /* GoogleService-Info.plist */; };
+		1DB1AA7D247F17DF004184EF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1AA7C247F17DF004184EF /* Constants.swift */; };
+		1DB1AA81247F78AE004184EF /* Afro2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1DB1AA80247F78AE004184EF /* Afro2.mp4 */; };
 		1DEF7FFF23BA7DFF002D98C1 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF7FFE23BA7DFF002D98C1 /* RestaurantTableViewCell.swift */; };
 		F046776DBEE94A2D53804806 /* Pods_FoodPinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F50A53AC5D3A6C0495D2FB91 /* Pods_FoodPinTests.framework */; };
 /* End PBXBuildFile section */
@@ -133,6 +137,7 @@
 		1D6CEAA1242A59E600325A55 /* MapKitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitTableViewCell.swift; sourceTree = "<group>"; };
 		1D6CEAA3242D02F600325A55 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1D6CEAA5242E90B800325A55 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		1D7D06E62480A4A1006C9606 /* AmericanFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericanFoodViewController.swift; sourceTree = "<group>"; };
 		1D83945C245A84A3000D4F80 /* RateEmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateEmojiViewController.swift; sourceTree = "<group>"; };
 		1D894F122432471500EA14DE /* RouteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTableViewController.swift; sourceTree = "<group>"; };
 		1D894F14243581C900EA14DE /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
@@ -157,6 +162,9 @@
 		1DB00A45247C53B100E4803A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		1DB00A47247E13DD00E4803A /* LoginFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFormViewController.swift; sourceTree = "<group>"; };
 		1DB00A4A247E1AC900E4803A /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		1DB1AA7A247EEB64004184EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1DB1AA7C247F17DF004184EF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1DB1AA80247F78AE004184EF /* Afro2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Afro2.mp4; path = ../../../Afro2.mp4; sourceTree = "<group>"; };
 		1DEF7FFE23BA7DFF002D98C1 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		3128AB8AF364DABB9E81E7C9 /* Pods-FoodPinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodPinUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodPinUITests/Pods-FoodPinUITests.release.xcconfig"; sourceTree = "<group>"; };
 		329F81158023D6E982530B7E /* Pods-FoodPinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodPinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodPinTests/Pods-FoodPinTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -204,6 +212,7 @@
 			children = (
 				1D297A2A2465C10000425E88 /* Food101.mlmodel */,
 				1D4BED7D2479BBDA00D15AB6 /* AfroPinScan 1.mlmodel */,
+				1DB1AA80247F78AE004184EF /* Afro2.mp4 */,
 				1D297A2C2465EA7A00425E88 /* emojiyum.scn */,
 				1D297A3624677D8700425E88 /* OBJ thinking.scn */,
 			);
@@ -251,6 +260,7 @@
 				1D6CEA932425162B00325A55 /* UIColor+ext.swift */,
 				1D6CEA9A24294CFE00325A55 /* UINavigationController+ext.swift */,
 				1DB00A4A247E1AC900E4803A /* Utilities.swift */,
+				1DB1AA7C247F17DF004184EF /* Constants.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -301,6 +311,7 @@
 				1D297A3F2467A17000425E88 /* SwiftUI */,
 				1DFB90402422936000D41F10 /* Storyboards */,
 				1D8EBB0823B504C100A95F13 /* Assets.xcassets */,
+				1DB1AA7A247EEB64004184EF /* GoogleService-Info.plist */,
 				1D8EBB0D23B504C100A95F13 /* Info.plist */,
 				1D297A2E2465EA8A00425E88 /* models and scenes */,
 				1D40AD9323DB95FE00FDB4C6 /* Table Cells */,
@@ -348,6 +359,7 @@
 				1D894F122432471500EA14DE /* RouteTableViewController.swift */,
 				1D894F1A2437E96600EA14DE /* NewRestaurantTableViewController.swift */,
 				1D83945C245A84A3000D4F80 /* RateEmojiViewController.swift */,
+				1D7D06E62480A4A1006C9606 /* AmericanFoodViewController.swift */,
 				1D6A507E245F2F88007F434D /* WalkthroughViewController.swift */,
 				1D6A5080245F3626007F434D /* WalkthroughPageViewController.swift */,
 				1D6A5082245F36FB007F434D /* WalkthroughContentViewController.swift */,
@@ -507,6 +519,8 @@
 			files = (
 				1D6A507D245E2AA9007F434D /* OnBoarding.storyboard in Resources */,
 				1D40AD8423D7DD3400FDB4C6 /* RestaurantMenuHollow.ttf in Resources */,
+				1DB1AA81247F78AE004184EF /* Afro2.mp4 in Resources */,
+				1DB1AA7B247EEB64004184EF /* GoogleService-Info.plist in Resources */,
 				1D40AD8523D7DD3400FDB4C6 /* RestaurantMenuBook.ttf in Resources */,
 				1D8EBB0C23B504C100A95F13 /* LaunchScreen.storyboard in Resources */,
 				1D6A5090245FC653007F434D /* About.storyboard in Resources */,
@@ -588,19 +602,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-FoodPin/Pods-FoodPin-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodPin/Pods-FoodPin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImageSwiftUI.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FoodPin/Pods-FoodPin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodPin/Pods-FoodPin-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FoodPin/Pods-FoodPin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B7E0995E308223B4777C7751 /* [CP] Check Pods Manifest.lock */ = {
@@ -629,6 +640,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DEF7FFF23BA7DFF002D98C1 /* RestaurantTableViewCell.swift in Sources */,
+				1DB1AA7D247F17DF004184EF /* Constants.swift in Sources */,
 				1D894F15243581C900EA14DE /* RoundedTextField.swift in Sources */,
 				1D40AD9223DB95E600FDB4C6 /* RestaurantDetailTextCell.swift in Sources */,
 				1D6CEAA6242E90B800325A55 /* ReviewViewController.swift in Sources */,
@@ -637,6 +649,7 @@
 				1DB00A46247C53B100E4803A /* SignUpViewController.swift in Sources */,
 				1D894F1B2437E96600EA14DE /* NewRestaurantTableViewController.swift in Sources */,
 				1D8EBB0023B504BF00A95F13 /* AppDelegate.swift in Sources */,
+				1D7D06E72480A4A1006C9606 /* AmericanFoodViewController.swift in Sources */,
 				1D6A509224609222007F434D /* AboutTableTableViewController.swift in Sources */,
 				1D83945D245A84A3000D4F80 /* RateEmojiViewController.swift in Sources */,
 				1D6CEAA02429B95500325A55 /* SeparatorTableViewCell.swift in Sources */,

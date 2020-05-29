@@ -57,7 +57,9 @@
                             <outlet property="delegate" destination="pDd-oI-iAR" id="sW6-gF-y8a"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="About" id="UY3-4t-aO5"/>
+                    <navigationItem key="navigationItem" title="About" id="UY3-4t-aO5">
+                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="y74-nV-Ez1"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="f0K-p1-owi" kind="show" identifier="showWebView" id="gmt-Mq-6np"/>
                     </connections>

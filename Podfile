@@ -6,6 +6,12 @@ target 'FoodPin' do
   use_frameworks!
 
   # Pods for FoodPin
+ #'https://github.com/CocoaPods/Specs.git'
+# add the Firebase pod for Google Analytics
+pod 'Firebase/Analytics'
+pod 'Firebase/Core'
+pod 'Firebase/Firestore'
+pod 'Firebase/Auth'
 pod 'SDWebImageSwiftUI'
   target 'FoodPinTests' do
     inherit! :search_paths
