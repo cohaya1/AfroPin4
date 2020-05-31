@@ -73,11 +73,14 @@ class DiscoverTableViewController: UITableViewController {
             let restaurant = restaurants[indexPath.row]
             cell.nameLabel.text = restaurant.object(forKey: "name") as? String
             cell.typeLabel.text = restaurant.object(forKey: "type") as? String
-        cell.phoneLabel.text = restaurant.object(forKey: "phone") as? String
-        cell.phoneLabel.isUserInteractionEnabled = true
+//        
         
+    cell.phoneLabel.text = restaurant.object(forKey: "phone") as? String
+cell.phoneLabel.isUserInteractionEnabled = true
+       
         
             cell.locationLabel.text = restaurant.object(forKey: "location") as? String
+        
             cell.descriptionLabel.text = restaurant.object(forKey: "description") as? String
             
             // Set the default image
@@ -165,7 +168,7 @@ class DiscoverTableViewController: UITableViewController {
     */
     
     @IBAction func onCallPress(_sender: UIButton){
-        let url:NSURL = URL(string: "TELL//\(String(describing: self.cell.phoneLabel?.text))")! as NSURL; UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
+        let url:NSURL = URL(string: "TELL//\(String(describing: self.cell.phonebutton))")! as NSURL; UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
     }
     
 @objc func fetchRecordsFromCloud() {

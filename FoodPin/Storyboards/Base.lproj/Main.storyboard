@@ -174,8 +174,8 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14t-ti-dAb">
                                 <rect key="frame" x="0.0" y="29" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="LPI-Kw-e3S">
-                                        <barButtonItem key="rightBarButtonItem" title="American Foods" id="fdc-Y4-fkE">
+                                    <navigationItem title="Afro Scan" id="LPI-Kw-e3S">
+                                        <barButtonItem key="rightBarButtonItem" title="American Scan" id="fdc-Y4-fkE">
                                             <connections>
                                                 <segue destination="PBR-om-tWv" kind="show" id="afT-5q-xiB"/>
                                             </connections>
@@ -870,10 +870,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Uj0-kg-7fb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Kbc-M4-13A">
-                                <rect key="frame" x="344" y="150" width="50" height="78"/>
+                                <rect key="frame" x="344" y="150" width="50" height="134"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1r-dn-CvE" userLabel="ExitMapButton">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -888,7 +888,7 @@
                                         </connections>
                                     </button>
                                     <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHh-pV-gCD">
-                                        <rect key="frame" x="0.0" y="64" width="50" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="64" width="50" height="25"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="Lzz-cJ-lYQ"/>
@@ -903,7 +903,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1L-4Y-HgM">
-                                        <rect key="frame" x="0.0" y="78" width="50" height="0.0"/>
+                                        <rect key="frame" x="0.0" y="103" width="50" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="tDk-Zo-X8m"/>
                                             <constraint firstAttribute="height" constant="31" id="tF9-mz-p5G"/>
@@ -916,7 +916,7 @@
                                 </subviews>
                             </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-na-Ybd">
-                                <rect key="frame" x="285" y="794" width="87" height="5"/>
+                                <rect key="frame" x="285" y="850" width="87" height="32"/>
                                 <segments>
                                     <segment title="" image="car.fill" catalog="system"/>
                                     <segment title="" image="icons8-walking-50"/>
@@ -1028,7 +1028,7 @@
             </objects>
             <point key="canvasLocation" x="2857.971014492754" y="450.66964285714283"/>
         </scene>
-        <!--American Food View Controller-->
+        <!--American Scan-->
         <scene sceneID="LFe-KZ-Yy5">
             <objects>
                 <viewController id="nCo-Ed-w40" customClass="AmericanFoodViewController" customModule="NaijaFoodPin" customModuleProvider="target" sceneMemberID="viewController">
@@ -1037,18 +1037,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x1A-mU-BnR">
-                                <rect key="frame" x="0.0" y="561" width="414" height="200"/>
+                                <rect key="frame" x="0.0" y="608" width="414" height="200"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Object Name:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaW-6l-zHM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Object Name:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaW-6l-zHM">
                                         <rect key="frame" x="20" y="45" width="374" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="27" id="SHa-hD-Kvb"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Accuracy: 0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF1-dr-47e">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy: 0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF1-dr-47e">
                                         <rect key="frame" x="20" y="127" width="374" height="27"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1056,19 +1057,26 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="qF1-dr-47e" secondAttribute="bottom" constant="46" id="3CQ-Xw-oeM"/>
                                     <constraint firstAttribute="height" constant="200" id="4gC-iC-JXy"/>
+                                    <constraint firstItem="qF1-dr-47e" firstAttribute="top" secondItem="kaW-6l-zHM" secondAttribute="bottom" constant="55" id="5QZ-Rr-Ytr"/>
+                                    <constraint firstItem="kaW-6l-zHM" firstAttribute="leading" secondItem="x1A-mU-BnR" secondAttribute="leading" constant="20" id="8B0-zx-dGl"/>
+                                    <constraint firstItem="kaW-6l-zHM" firstAttribute="leading" secondItem="qF1-dr-47e" secondAttribute="leading" id="SYo-FI-U8j"/>
+                                    <constraint firstItem="kaW-6l-zHM" firstAttribute="top" secondItem="x1A-mU-BnR" secondAttribute="top" constant="45" id="UZl-4O-bHa"/>
+                                    <constraint firstItem="kaW-6l-zHM" firstAttribute="centerX" secondItem="x1A-mU-BnR" secondAttribute="centerX" id="eYi-RZ-QwV"/>
+                                    <constraint firstItem="kaW-6l-zHM" firstAttribute="trailing" secondItem="qF1-dr-47e" secondAttribute="trailing" id="fqg-kF-O3k"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="x1A-mU-BnR" firstAttribute="top" secondItem="0xF-O9-lTa" secondAttribute="top" constant="505" id="8Lv-Tw-wLb"/>
-                            <constraint firstItem="x1A-mU-BnR" firstAttribute="leading" secondItem="0xF-O9-lTa" secondAttribute="leading" id="gbZ-3s-qHN"/>
-                            <constraint firstItem="x1A-mU-BnR" firstAttribute="centerX" secondItem="dw2-k0-F90" secondAttribute="centerX" id="lWR-bU-cH6"/>
+                            <constraint firstItem="0xF-O9-lTa" firstAttribute="bottom" secondItem="x1A-mU-BnR" secondAttribute="bottom" id="UiL-ph-gWG"/>
+                            <constraint firstItem="x1A-mU-BnR" firstAttribute="trailing" secondItem="0xF-O9-lTa" secondAttribute="trailing" id="aG0-NF-5Xn"/>
+                            <constraint firstItem="x1A-mU-BnR" firstAttribute="leading" secondItem="0xF-O9-lTa" secondAttribute="leading" id="baZ-Ab-id9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0xF-O9-lTa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="IIW-Id-ThF"/>
+                    <navigationItem key="navigationItem" title="American Scan" id="IIW-Id-ThF"/>
                     <connections>
                         <outlet property="accuracyLabel" destination="qF1-dr-47e" id="RmH-lC-uks"/>
                         <outlet property="belowView" destination="x1A-mU-BnR" id="mfl-59-kgd"/>
@@ -1112,7 +1120,7 @@
         <!--Login View Controller-->
         <scene sceneID="uRF-fP-uOd">
             <objects>
-                <viewController id="C9O-dZ-PSU" customClass="LoginViewController" customModule="NaijaFoodPin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="C9O-dZ-PSU" customClass="LoginViewController" customModule="NaijaFoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZY3-0E-ZbW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1168,12 +1176,12 @@
         <scene sceneID="Cti-o3-S9A">
             <objects>
                 <viewController id="8C1-Ys-3YP" customClass="LoginFormViewController" customModule="NaijaFoodPin" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="7gI-v6-Dbw">
+                    <view key="view" contentMode="scaleToFill" id="7gI-v6-Dbw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jx7-Co-vOP">
-                                <rect key="frame" x="40" y="128" width="334" height="220"/>
+                                <rect key="frame" x="40" y="84" width="334" height="220"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9BE-Oc-q5o">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="40"/>
@@ -1212,7 +1220,7 @@
                                 </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Afropin" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-tp-2o5">
-                                <rect key="frame" x="0.0" y="398" width="414" height="542"/>
+                                <rect key="frame" x="0.0" y="354" width="414" height="542"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="542" id="AeF-3G-TqJ"/>
                                     <constraint firstAttribute="width" constant="414" id="F5J-mB-sl3"/>
@@ -1379,11 +1387,10 @@
         <!--Navigation Controller-->
         <scene sceneID="db8-P2-MVj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NPs-0r-A9v" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="NPs-0r-A9v" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="Uqu-tw-HU2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MxN-Oc-syU">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

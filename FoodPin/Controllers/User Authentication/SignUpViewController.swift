@@ -20,6 +20,7 @@ class SignUpViewController: UIViewController {
        @IBOutlet weak var signUpButton: UIButton!
        
        @IBOutlet weak var errorLabel: UILabel!
+    var spinner = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
      setUpElements()
@@ -61,6 +62,17 @@ class SignUpViewController: UIViewController {
        
     
 @IBAction func signUpTapped(_ sender: Any) {
+    spinner.style = .gray
+           spinner.hidesWhenStopped = true
+           view.addSubview(spinner)
+           
+           // Define layout constraints for the spinner
+           spinner.translatesAutoresizingMaskIntoConstraints = false
+           NSLayoutConstraint.activate([ spinner.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 150.0),
+                                         spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor)])
+           
+           // Activate the spinner
+           spinner.startAnimating()
     // Validate the fields
             let error = validateFields()
             
@@ -68,6 +80,7 @@ class SignUpViewController: UIViewController {
                 
                 // There's something wrong with the fields, show error message
                 showError(error!)
+                spinner.stopAnimating()
             }
             else {
                 
@@ -82,9 +95,10 @@ class SignUpViewController: UIViewController {
                     
                     // Check for errors
                     if err != nil {
-                        
+                       
                         // There was an error creating the user
                         self.showError("Error creating user")
+                         self.spinner.stopAnimating()
                     }
                     else {
                         
@@ -92,15 +106,17 @@ class SignUpViewController: UIViewController {
                         let db = Firestore.firestore()
                         
                         db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid": result!.user.uid ]) { (error) in
-                            
+                             self.spinner.stopAnimating()
                             if error != nil {
                                 // Show error message
                                 self.showError("Error saving user data")
+                                 self.spinner.stopAnimating()
                             }
                         }
                         
                         // Transition to the home screen
                         self.transitionToHome()
+                         self.spinner.stopAnimating()
                     }
                     
                 }

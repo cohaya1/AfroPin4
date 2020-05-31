@@ -56,6 +56,7 @@
 		1D6CEAA4242D02F600325A55 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEAA3242D02F600325A55 /* MapViewController.swift */; };
 		1D6CEAA6242E90B800325A55 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D6CEAA5242E90B800325A55 /* ReviewViewController.swift */; };
 		1D7D06E72480A4A1006C9606 /* AmericanFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D06E62480A4A1006C9606 /* AmericanFoodViewController.swift */; };
+		1D7D06E9248353AD006C9606 /* Constants2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D7D06E8248353AD006C9606 /* Constants2.swift */; };
 		1D83945D245A84A3000D4F80 /* RateEmojiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D83945C245A84A3000D4F80 /* RateEmojiViewController.swift */; };
 		1D894F132432471500EA14DE /* RouteTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D894F122432471500EA14DE /* RouteTableViewController.swift */; };
 		1D894F15243581C900EA14DE /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D894F14243581C900EA14DE /* RoundedTextField.swift */; };
@@ -138,6 +139,7 @@
 		1D6CEAA3242D02F600325A55 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1D6CEAA5242E90B800325A55 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		1D7D06E62480A4A1006C9606 /* AmericanFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmericanFoodViewController.swift; sourceTree = "<group>"; };
+		1D7D06E8248353AD006C9606 /* Constants2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants2.swift; sourceTree = "<group>"; };
 		1D83945C245A84A3000D4F80 /* RateEmojiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateEmojiViewController.swift; sourceTree = "<group>"; };
 		1D894F122432471500EA14DE /* RouteTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteTableViewController.swift; sourceTree = "<group>"; };
 		1D894F14243581C900EA14DE /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				1D6CEA9A24294CFE00325A55 /* UINavigationController+ext.swift */,
 				1DB00A4A247E1AC900E4803A /* Utilities.swift */,
 				1DB1AA7C247F17DF004184EF /* Constants.swift */,
+				1D7D06E8248353AD006C9606 /* Constants2.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				1D894F15243581C900EA14DE /* RoundedTextField.swift in Sources */,
 				1D40AD9223DB95E600FDB4C6 /* RestaurantDetailTextCell.swift in Sources */,
 				1D6CEAA6242E90B800325A55 /* ReviewViewController.swift in Sources */,
+				1D7D06E9248353AD006C9606 /* Constants2.swift in Sources */,
 				1D6A5081245F3626007F434D /* WalkthroughPageViewController.swift in Sources */,
 				1D6CEAA2242A59E600325A55 /* MapKitTableViewCell.swift in Sources */,
 				1DB00A46247C53B100E4803A /* SignUpViewController.swift in Sources */,

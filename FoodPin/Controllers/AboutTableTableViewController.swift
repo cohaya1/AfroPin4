@@ -33,7 +33,6 @@ class AboutTableTableViewController: UITableViewController {
                
                tableView.tableFooterView = UIView()
            }
-
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -86,6 +85,22 @@ class AboutTableTableViewController: UITableViewController {
 
         return cell
     }
+    
+    @IBAction func logoutTapped(_ sender: Any) {
+     
+        if Auth.auth().currentUser != nil {
+                do {
+                    try Auth.auth().signOut()
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
+                    present(vc, animated: true, completion: nil)
+                  //  self.navigationController?.pushViewController(vc, animated: true)
+                    
+                } catch let error as NSError {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "showWebView" {
                 if let destinationController = segue.destination as? WebViewController,

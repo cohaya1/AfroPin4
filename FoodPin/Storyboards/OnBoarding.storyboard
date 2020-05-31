@@ -32,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ys1-YS-MrX">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="623.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="663.5"/>
                                 <connections>
                                     <segue destination="UJG-e3-OLU" kind="embed" id="Mwu-kO-E1T"/>
                                 </connections>
@@ -93,7 +93,7 @@
                             <constraint firstItem="fs3-xs-Jqu" firstAttribute="leading" secondItem="gKb-Z0-ScM" secondAttribute="leading" id="fM6-FG-TlG"/>
                             <constraint firstItem="fs3-xs-Jqu" firstAttribute="trailing" secondItem="gKb-Z0-ScM" secondAttribute="trailing" id="ggK-bv-ljr"/>
                             <constraint firstItem="ys1-YS-MrX" firstAttribute="leading" secondItem="gKb-Z0-ScM" secondAttribute="leading" id="oDI-kX-iUu"/>
-                            <constraint firstItem="fs3-xs-Jqu" firstAttribute="top" secondItem="ys1-YS-MrX" secondAttribute="bottom" id="pmq-xW-Jaz"/>
+                            <constraint firstItem="fs3-xs-Jqu" firstAttribute="top" secondItem="ys1-YS-MrX" secondAttribute="bottom" constant="-40" id="pmq-xW-Jaz"/>
                             <constraint firstAttribute="bottom" secondItem="fs3-xs-Jqu" secondAttribute="bottom" id="uda-Eh-Pem"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gKb-Z0-ScM"/>

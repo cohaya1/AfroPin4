@@ -58,7 +58,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="About" id="UY3-4t-aO5">
-                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="y74-nV-Ez1"/>
+                        <barButtonItem key="leftBarButtonItem" title="LogOut" id="y74-nV-Ez1">
+                            <connections>
+                                <action selector="logoutTapped:" destination="pDd-oI-iAR" id="v1i-kG-mMU"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="f0K-p1-owi" kind="show" identifier="showWebView" id="gmt-Mq-6np"/>

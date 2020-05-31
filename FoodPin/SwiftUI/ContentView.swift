@@ -25,6 +25,7 @@ struct ContentView: View {
                     Card(image: data.image, name: data.name, weburl: data.webUrl)
                 }
             }.navigationBarTitle("Near By Restaurants")
+            
             /*
             List(locationViewModel.datas){i in
                 

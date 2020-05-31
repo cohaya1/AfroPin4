@@ -75,8 +75,17 @@
                                                                         <constraint firstAttribute="height" constant="20" id="u3R-dI-cm4"/>
                                                                     </constraints>
                                                                 </imageView>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfe-Ji-MJd">
+                                                                    <rect key="frame" x="35" y="0.0" width="20" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="20" id="vux-Md-X1M"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <action selector="goToMaps:" destination="Fbx-WT-7is" eventType="touchUpInside" id="6Qu-SC-qKV"/>
+                                                                    </connections>
+                                                                </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUi-jZ-udJ">
-                                                                    <rect key="frame" x="35" y="0.0" width="379" height="20"/>
+                                                                    <rect key="frame" x="70" y="0.0" width="344" height="20"/>
                                                                     <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="14"/>
                                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -96,10 +105,19 @@
                                                                         <constraint firstAttribute="height" constant="20" id="vvy-38-RAx"/>
                                                                     </constraints>
                                                                 </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EP8-bs-MZe">
-                                                                    <rect key="frame" x="35" y="0.0" width="379" height="20"/>
-                                                                    <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="14"/>
-                                                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzn-zX-JDx">
+                                                                    <rect key="frame" x="35" y="0.0" width="20" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="20" id="Mnw-lA-zCR"/>
+                                                                    </constraints>
+                                                                    <connections>
+                                                                        <action selector="callNumber:" destination="Fbx-WT-7is" eventType="touchUpInside" id="cSs-zj-UX1"/>
+                                                                    </connections>
+                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFE-J4-1oS">
+                                                                    <rect key="frame" x="70" y="0.0" width="344" height="20"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -125,9 +143,11 @@
                                 <connections>
                                     <outlet property="descriptionLabel" destination="5bf-OD-ikk" id="BKx-BL-46X"/>
                                     <outlet property="featuredImageView" destination="eaD-xb-IX3" id="P5H-pc-Hqt"/>
-                                    <outlet property="locationLabel" destination="SUi-jZ-udJ" id="S98-vF-mKv"/>
+                                    <outlet property="locationLabel" destination="SUi-jZ-udJ" id="IZM-CA-8De"/>
+                                    <outlet property="mapbutton" destination="yfe-Ji-MJd" id="qbN-XT-zK5"/>
                                     <outlet property="nameLabel" destination="hgA-7d-dQP" id="ftf-7E-8PR"/>
-                                    <outlet property="phoneLabel" destination="EP8-bs-MZe" id="gQQ-wn-lqm"/>
+                                    <outlet property="phoneLabel" destination="jFE-J4-1oS" id="Nv5-41-Tnk"/>
+                                    <outlet property="phonebutton" destination="Vzn-zX-JDx" id="Apc-NU-2Ai"/>
                                     <outlet property="typeLabel" destination="Jcg-vo-8qA" id="oiO-qH-h3z"/>
                                 </connections>
                             </tableViewCell>
