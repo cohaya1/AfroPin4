@@ -27,20 +27,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="datacell" rowHeight="97" id="uNW-TO-8nu" customClass="RestaurantTableViewCell" customModule="NaijaFoodPin" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="97"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="datacell" rowHeight="130" id="uNW-TO-8nu" customClass="RestaurantTableViewCell" customModule="NaijaFoodPin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="130"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uNW-TO-8nu" id="i73-QW-ZkH">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Jga-ve-hPH">
-                                            <rect key="frame" x="26" y="11" width="368" height="75"/>
+                                            <rect key="frame" x="26" y="11" width="368" height="108"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8mY-ee-HMa">
-                                                    <rect key="frame" x="0.0" y="0.0" width="69" height="60"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="69" height="70"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="60" id="AiG-ux-6fa"/>
+                                                        <constraint firstAttribute="height" constant="70" id="AiG-ux-6fa"/>
                                                         <constraint firstAttribute="width" constant="69" id="WMb-km-Tsr"/>
                                                     </constraints>
                                                     <userDefinedRuntimeAttributes>
@@ -130,7 +130,7 @@
                     <viewLayoutGuide key="safeArea" id="NnQ-pB-XQ9"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="4678.2608695652179" y="450.66964285714283"/>
+            <point key="canvasLocation" x="5588.4057971014499" y="450.66964285714283"/>
         </scene>
         <!--RateEmojiViewController-->
         <scene sceneID="KWB-Qa-ZXV">
@@ -200,7 +200,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CPF-C5-Lwh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Scan" image="igicon" id="Hya-n3-Ak8"/>
+                    <tabBarItem key="tabBarItem" title="Scan" image="ScanScan" id="Hya-n3-Ak8"/>
                     <connections>
                         <outlet property="accuracyLabel" destination="Y7l-Ij-Tcd" id="JNc-dc-cuw"/>
                         <outlet property="belowView" destination="J8W-Rf-SmV" id="aBo-Pc-aOs"/>
@@ -210,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sby-DK-Csz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7181.1594202898559" y="998.4375"/>
+            <point key="canvasLocation" x="8091.3043478260879" y="998.4375"/>
         </scene>
         <!--New Restaurant-->
         <scene sceneID="0E6-Rg-phQ">
@@ -442,23 +442,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kB3-Sb-XNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="0AC-Qb-TQ6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="9218.8405797101459" y="823.66071428571422"/>
+            <point key="canvasLocation" x="10128.985507246378" y="823.66071428571422"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="IKj-pN-Fwn">
             <objects>
                 <viewController id="lDD-bZ-TaT" customClass="ReviewViewController" customModule="NaijaFoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C9d-2p-wNL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="900" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4E-se-MSE">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" verticalHuggingPriority="255" axis="vertical" alignment="top" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ehm-aX-KXI">
-                                <rect key="frame" x="107" y="113" width="200" height="670"/>
+                                <rect key="frame" x="107" y="86" width="200" height="670"/>
                                 <subviews>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVm-4R-g3e">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
@@ -539,7 +539,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YlX-UU-P5X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Woc-fo-VKI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="5715.9420289855079" y="287.94642857142856"/>
+            <point key="canvasLocation" x="6626.0869565217399" y="287.94642857142856"/>
         </scene>
         <!--Steps-->
         <scene sceneID="Fck-zc-kBs">
@@ -587,18 +587,18 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Kg-2C-UDS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3768.115942028986" y="450.66964285714283"/>
+            <point key="canvasLocation" x="4678.2608695652179" y="450.66964285714283"/>
         </scene>
         <!--Restaurant Detail View Controller-->
         <scene sceneID="aYu-aD-dGQ">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="JRB-rV-nD0" customClass="RestaurantDetailViewController" customModule="NaijaFoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bmM-7z-SzC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6h-OO-87p">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="946"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <view key="tableHeaderView" contentMode="scaleAspectFill" id="zDJ-J0-iM0" customClass="RestaurantDetailHeaderView" customModule="NaijaFoodPin" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="350"/>
@@ -682,7 +682,7 @@
                                     </connections>
                                 </view>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="VRy-vz-lWH">
-                                    <rect key="frame" x="0.0" y="755" width="414" height="90"/>
+                                    <rect key="frame" x="0.0" y="810" width="414" height="90"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbn-Hg-sa8">
@@ -811,25 +811,26 @@
                                             <outlet property="titleLabel" destination="Xmy-ZK-qWW" id="kYW-ut-O3O"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MapKitTableViewCell" rowHeight="215" id="ZSe-ad-gqI" customClass="MapKitTableViewCell" customModule="NaijaFoodPin" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="512" width="414" height="215"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MapKitTableViewCell" rowHeight="270" id="ZSe-ad-gqI" customClass="MapKitTableViewCell" customModule="NaijaFoodPin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="512" width="414" height="270"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZSe-ad-gqI" id="a0I-NA-k7b">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="270"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMr-rz-upV">
-                                                    <rect key="frame" x="20" y="11" width="374" height="193"/>
+                                                    <rect key="frame" x="20" y="39" width="374" height="192"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="193" id="RAp-ih-LHt"/>
+                                                        <constraint firstAttribute="height" constant="192" id="I7O-dE-u8g"/>
+                                                        <constraint firstAttribute="width" constant="374" id="kea-Ey-eYa"/>
                                                     </constraints>
                                                 </mapView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="pMr-rz-upV" firstAttribute="top" relation="greaterThanOrEqual" secondItem="a0I-NA-k7b" secondAttribute="topMargin" id="TzM-we-DUf"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="pMr-rz-upV" secondAttribute="trailing" id="g3Z-LF-GQ8"/>
-                                                <constraint firstItem="pMr-rz-upV" firstAttribute="leading" secondItem="a0I-NA-k7b" secondAttribute="leadingMargin" id="hNL-Rg-RmA"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="pMr-rz-upV" secondAttribute="bottom" id="qUy-xx-X0I"/>
+                                                <constraint firstItem="pMr-rz-upV" firstAttribute="trailing" secondItem="a0I-NA-k7b" secondAttribute="trailingMargin" id="07s-Hh-zJa"/>
+                                                <constraint firstItem="pMr-rz-upV" firstAttribute="top" secondItem="a0I-NA-k7b" secondAttribute="topMargin" constant="28" id="Dvb-Ut-k80"/>
+                                                <constraint firstItem="pMr-rz-upV" firstAttribute="centerY" secondItem="a0I-NA-k7b" secondAttribute="centerY" id="I82-ux-Cfk"/>
+                                                <constraint firstItem="pMr-rz-upV" firstAttribute="leading" secondItem="a0I-NA-k7b" secondAttribute="leadingMargin" id="sgA-Y0-gSX"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -869,11 +870,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Uj0-kg-7fb">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uj0-kg-7fb">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </mapView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Kbc-M4-13A">
-                                <rect key="frame" x="344" y="150" width="50" height="134"/>
+                                <rect key="frame" x="344" y="62" width="50" height="134"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1r-dn-CvE" userLabel="ExitMapButton">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -916,7 +917,7 @@
                                 </subviews>
                             </stackView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-na-Ybd">
-                                <rect key="frame" x="285" y="850" width="87" height="32"/>
+                                <rect key="frame" x="285" y="762" width="87" height="32"/>
                                 <segments>
                                     <segment title="" image="car.fill" catalog="system"/>
                                     <segment title="" image="icons8-walking-50"/>
@@ -988,7 +989,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wK9-HK-hj7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8308.6956521739139" y="823.66071428571422"/>
+            <point key="canvasLocation" x="9218.8405797101459" y="823.66071428571422"/>
         </scene>
         <!--RealContentViewController-->
         <scene sceneID="lZN-Oc-165">
@@ -1000,11 +1001,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Dh9-XG-DIO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="MD3-z9-EU2"/>
+                    <navigationItem key="navigationItem" title="Nearby" id="MD3-z9-EU2">
+                        <barButtonItem key="backBarButtonItem" title="." id="ebe-D6-Vzc"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6h-PQ-DTv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1897.1014492753625" y="574.55357142857144"/>
+            <point key="canvasLocation" x="2807.2463768115945" y="574.55357142857144"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="q7u-c5-MC9">
@@ -1021,12 +1024,12 @@
                         <segue destination="50Y-JM-n1N" kind="relationship" relationship="viewControllers" id="R81-cd-rgo"/>
                         <segue destination="ox9-tK-PJ5" kind="relationship" relationship="viewControllers" id="N95-HB-Gwl"/>
                         <segue destination="GOW-oC-WIq" kind="relationship" relationship="viewControllers" id="LlZ-03-4dO"/>
-                        <segue destination="Bfy-fR-PEG" kind="relationship" relationship="viewControllers" id="cjw-Tc-psR"/>
+                        <segue destination="PEQ-a6-S4V" kind="relationship" relationship="viewControllers" id="s1a-xc-2FB"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2m-aE-8Ob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2857.971014492754" y="450.66964285714283"/>
+            <point key="canvasLocation" x="3768.115942028986" y="450.66964285714283"/>
         </scene>
         <!--American Scan-->
         <scene sceneID="LFe-KZ-Yy5">
@@ -1153,12 +1156,21 @@
                                     <constraint firstItem="T8b-RZ-D00" firstAttribute="height" secondItem="44X-7U-5I1" secondAttribute="height" id="tBU-oM-dwl"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfr" translatesAutoresizingMaskIntoConstraints="NO" id="djG-nk-rNH">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="6gY-II-YQ7"/>
+                                    <constraint firstAttribute="height" constant="128" id="hwu-Zm-BwL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="dqz-Ha-DmS" firstAttribute="bottom" secondItem="F0o-wF-rJc" secondAttribute="bottom" constant="40" id="HFm-P2-sSc"/>
+                            <constraint firstItem="djG-nk-rNH" firstAttribute="centerY" secondItem="ZY3-0E-ZbW" secondAttribute="centerY" id="Q5n-Z3-AIN"/>
                             <constraint firstItem="F0o-wF-rJc" firstAttribute="leading" secondItem="dqz-Ha-DmS" secondAttribute="leading" constant="40" id="h3f-kp-vAG"/>
                             <constraint firstItem="dqz-Ha-DmS" firstAttribute="trailing" secondItem="F0o-wF-rJc" secondAttribute="trailing" constant="40" id="lOM-32-Cnu"/>
+                            <constraint firstItem="djG-nk-rNH" firstAttribute="centerX" secondItem="ZY3-0E-ZbW" secondAttribute="centerX" id="py0-RB-eJh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dqz-Ha-DmS"/>
                     </view>
@@ -1347,24 +1359,6 @@
             </objects>
             <point key="canvasLocation" x="-2943" y="548"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="pE1-ZB-O3g">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Bfy-fR-PEG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="kdR-ad-cQk"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ndc-uP-KEt">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ieL-3F-9FQ" kind="relationship" relationship="rootViewController" id="0Bk-vY-Fbs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yhd-iM-ozX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="986.95652173913049" y="574.55357142857144"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0B5-y5-dh3">
             <objects>
@@ -1419,25 +1413,51 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rJ2-sB-Bz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5338" y="1214"/>
+            <point key="canvasLocation" x="6247.826086956522" y="1213.3928571428571"/>
+        </scene>
+        <!--Nearby-->
+        <scene sceneID="ZiU-he-SwT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PEQ-a6-S4V" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Nearby" image="nearby button" id="dZG-Id-7hf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backIndicatorImage="back" id="iwa-RJ-Xju">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ieL-3F-9FQ" kind="relationship" relationship="rootViewController" id="f39-lb-imY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gNh-a3-xkP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1897.1014492753625" y="574.55357142857144"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xgl-8p-gej"/>
+        <segue reference="Nqc-ZC-7s4"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Afropin" width="76" height="76"/>
         <image name="Drooling Emoji" width="304" height="320"/>
         <image name="Expressionless Emoji" width="320" height="320"/>
+        <image name="ScanScan" width="50" height="50"/>
         <image name="Sick Emoji 2" width="343" height="320"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="back" width="29" height="17"/>
         <image name="camera" catalog="system" width="128" height="96"/>
         <image name="car.fill" catalog="system" width="128" height="93"/>
         <image name="empty" width="310" height="372"/>
         <image name="iconFoodspoon" width="40" height="40"/>
+        <image name="iconfr" width="344" height="403.5"/>
         <image name="icons8-treasure-map-50" width="25" height="25"/>
         <image name="icons8-walking-50" width="25" height="25"/>
-        <image name="igicon" width="25" height="25"/>
         <image name="nearby button" width="25" height="25"/>
         <image name="phone.fill.arrow.right" catalog="system" width="115" height="128"/>
         <image name="photo" catalog="system" width="128" height="93"/>

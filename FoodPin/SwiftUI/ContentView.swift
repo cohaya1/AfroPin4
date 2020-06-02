@@ -11,10 +11,29 @@ import SDWebImageSwiftUI
 import WebKit
 import CoreLocation
 
+struct HiddenNavigationBar: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+        .navigationBarTitle("", displayMode: .inline)
+        .navigationBarHidden(true)
+    }
+}
+
+extension View {
+    func hiddenNavigationBarStyle() -> some View {
+        modifier( HiddenNavigationBar() )
+    }
+}
+
 struct ContentView: View {
-    
+    @State private var shouldAnimate = false
     //@ObservedObject var obs = observer()
+
 @ObservedObject var locationViewModel = LocationViewModel()
+    
+    
+    
+     
     
     var body: some View {
         
@@ -24,8 +43,8 @@ struct ContentView: View {
                 ForEach(self.locationViewModel.datas, id: \.id) { data in
                     Card(image: data.image, name: data.name, weburl: data.webUrl)
                 }
-            }.navigationBarTitle("Near By Restaurants")
-            
+            }.navigationBarTitle("Near By Restaurants").foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/).accentColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+                 
             /*
             List(locationViewModel.datas){i in
                 
@@ -45,7 +64,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 class observer : ObservableObject{
-    
+     @State private var shouldAnimate = false
     @Published var datas = [datatype]()
     @ObservedObject var locationViewModel = LocationViewModel()
     init() {
@@ -71,7 +90,8 @@ class observer : ObservableObject{
                 let fetch = try JSONDecoder().decode(Type.self, from: data!)
                 print(fetch)
                 
-                for i in fetch.nearby_restaurants{
+                for i in fetch.nearby_restaurants
+                {
                     
                     
                     DispatchQueue.main.async {

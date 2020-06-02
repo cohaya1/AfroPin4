@@ -66,26 +66,22 @@
                                                     <rect key="frame" x="0.0" y="296" width="414" height="210"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kNh-3E-P8W">
-                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="n1L-JP-e7g">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfe-Ji-MJd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="20" id="3HI-iZ-Jui"/>
-                                                                        <constraint firstAttribute="height" constant="20" id="u3R-dI-cm4"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="vYu-Qp-NVV"/>
+                                                                        <constraint firstAttribute="width" constant="30" id="vux-Md-X1M"/>
                                                                     </constraints>
-                                                                </imageView>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfe-Ji-MJd">
-                                                                    <rect key="frame" x="35" y="0.0" width="20" height="20"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="20" id="vux-Md-X1M"/>
-                                                                    </constraints>
+                                                                    <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="2"/>
+                                                                    <state key="normal" image="RedMap"/>
                                                                     <connections>
                                                                         <action selector="goToMaps:" destination="Fbx-WT-7is" eventType="touchUpInside" id="6Qu-SC-qKV"/>
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUi-jZ-udJ">
-                                                                    <rect key="frame" x="70" y="0.0" width="344" height="20"/>
+                                                                    <rect key="frame" x="45" y="0.0" width="369" height="30"/>
                                                                     <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="14"/>
                                                                     <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -93,37 +89,29 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Q2c-Au-y9D">
-                                                            <rect key="frame" x="0.0" y="27" width="414" height="20"/>
+                                                            <rect key="frame" x="0.0" y="37" width="414" height="30"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="Rmm-OU-cCs">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
-                                                                    <accessibility key="accessibilityConfiguration">
-                                                                        <accessibilityTraits key="traits" button="YES" image="YES"/>
-                                                                    </accessibility>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzn-zX-JDx">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="20" id="TYD-7m-NtO"/>
-                                                                        <constraint firstAttribute="height" constant="20" id="vvy-38-RAx"/>
+                                                                        <constraint firstAttribute="width" constant="30" id="Mnw-lA-zCR"/>
+                                                                        <constraint firstAttribute="height" constant="30" id="Ttw-NA-FY5"/>
                                                                     </constraints>
-                                                                </imageView>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vzn-zX-JDx">
-                                                                    <rect key="frame" x="35" y="0.0" width="20" height="20"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="width" constant="20" id="Mnw-lA-zCR"/>
-                                                                    </constraints>
+                                                                    <state key="normal" image="redPhone"/>
                                                                     <connections>
                                                                         <action selector="callNumber:" destination="Fbx-WT-7is" eventType="touchUpInside" id="cSs-zj-UX1"/>
                                                                     </connections>
                                                                 </button>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jFE-J4-1oS">
-                                                                    <rect key="frame" x="70" y="0.0" width="344" height="20"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <rect key="frame" x="45" y="0.0" width="369" height="30"/>
+                                                                    <fontDescription key="fontDescription" name="Rubik-Medium" family="Rubik" pointSize="14"/>
+                                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bf-OD-ikk">
-                                                            <rect key="frame" x="0.0" y="54" width="414" height="156"/>
+                                                            <rect key="frame" x="0.0" y="74" width="414" height="136"/>
                                                             <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="14"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -167,7 +155,7 @@
         <scene sceneID="c9U-Ag-7ds">
             <objects>
                 <navigationController id="d29-Qn-kBW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Discover" image="glasses icon" id="VeF-xV-V7o"/>
+                    <tabBarItem key="tabBarItem" title="Discover" image="Discover" id="VeF-xV-V7o"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="n0K-Ly-yIW" userLabel="Discover">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -182,8 +170,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="glasses icon" width="8" height="8"/>
-        <image name="map" width="18" height="20"/>
-        <image name="phone" width="17" height="17"/>
+        <image name="Discover" width="50" height="50"/>
+        <image name="RedMap" width="50" height="50"/>
+        <image name="redPhone" width="50" height="50"/>
     </resources>
 </document>

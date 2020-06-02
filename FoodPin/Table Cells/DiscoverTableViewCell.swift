@@ -14,6 +14,7 @@ class DiscoverTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel! {
             didSet {
                 nameLabel.numberOfLines = 0
+                nameLabel.layer.borderColor = .init(srgbRed: 5.0, green: 0, blue: 0, alpha: 1.0)
             }
         }
     @IBOutlet weak var phoneLabel: UILabel!
@@ -54,12 +55,20 @@ class DiscoverTableViewCell: UITableViewCell {
         @IBOutlet var descriptionLabel: UILabel! {
             didSet {
                 descriptionLabel.numberOfLines = 0
+                descriptionLabel.layer.borderColor = .init(srgbRed: 5.0, green: 0, blue: 0, alpha: 1.0)
             }
         }
         @IBOutlet weak var featuredImageView: UIImageView! {
             didSet {
                 featuredImageView.contentMode = .scaleAspectFill
                 featuredImageView.clipsToBounds = true
+              featuredImageView.layer.cornerRadius =  7.0
+               featuredImageView.layer.borderWidth = 0.5
+                featuredImageView.layer.borderColor = .init(srgbRed: 5.0, green: 0, blue: 0, alpha: 1.0)
+                let blurEffect = UIBlurEffect(style: .dark)
+                let blurredEffectView = UIVisualEffectView(effect: blurEffect)
+                blurredEffectView.frame = featuredImageView.bounds
+               
             }
         }
         

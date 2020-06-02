@@ -15,9 +15,10 @@ class AboutTableTableViewController: UITableViewController {
     var sectionTitles = [NSLocalizedString("Feedback", comment: "Feedback"), NSLocalizedString("Follow Us", comment: "Follow Us")]
     var sectionContent = [[(image: "store", text: NSLocalizedString("Rate us on App Store", comment: "Rate us on App Store"), link: "https://www.apple.com/itunes/charts/paid-apps/"),
                            (image: "chat", text: NSLocalizedString("Tell us your feedback", comment: "Tell us your feedback"), link: "http://www.appcoda.com/contact")],
-                          [(image: "twitter", text: NSLocalizedString("Twitter", comment: "Twitter"), link: "https://twitter.com/appcodamobile"),
-                           (image: "facebook", text: NSLocalizedString("Facebook", comment: "Facebook"), link: "https://facebook.com/appcodamobile"),
-                           (image: "instagram", text: NSLocalizedString("Instagram", comment: "Instagram"), link: "https://www.instagram.com/appcodadotcom")]]
+                          [(image: "twittericon", text: NSLocalizedString("Twitter", comment: "Twitter"), link: "https://twitter.com/appcodamobile"),
+                           (image: "facebookicon", text: NSLocalizedString("Facebook", comment: "Facebook"), link:
+                            "https://www.facebook.com/profile.php?id=100001970751345"),
+                           (image: "linkedin", text: NSLocalizedString("Linkedin", comment: "Linkedin"), link: "https://www.linkedin.com/in/cohaya1/")]]
     override func viewDidLoad() {
         super.viewDidLoad()
 

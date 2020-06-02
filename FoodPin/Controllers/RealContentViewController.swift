@@ -8,6 +8,7 @@
 import SwiftUI
 import UIKit
 
+
 class RealContentViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,7 +17,9 @@ class RealContentViewController: UIViewController {
                      
 let newView = UIHostingController(rootView: ContentView())
         navigationController?.pushViewController(newView, animated: true)
-      
+         navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setToolbarHidden(true, animated: true)
+        
         
     }
     

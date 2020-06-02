@@ -9,19 +9,24 @@ import MapKit
 import UIKit
 
 class MapViewController: UIViewController,MKMapViewDelegate {
-
+    
+    
     @IBOutlet var mapView2 : MKMapView!
     @IBOutlet var ExitMapButton : UIButton!
     @IBOutlet var segmentedcontrol : UISegmentedControl!
     @IBOutlet weak var NearbyButton : UIButton!
+   
+    
     var currentPlacemark: CLPlacemark?
     var currentTransportType = MKDirectionsTransportType.automobile
     var currentRoute: MKRoute?
     var restaurant: RestaurantMO!
+    var detailinfo: RestaurantDetailIconTextCellTableView!
     let locationmanager = CLLocationManager()
     
    override func viewDidLoad() {
             super.viewDidLoad()
+    navigationController?.navigationBar.tintColor = .white
    segmentedcontrol.isHidden = true
    segmentedcontrol.addTarget(self, action: #selector(showDirection), for: .valueChanged)
     // Request User Auth for location services
@@ -76,7 +81,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
              super.didReceiveMemoryWarning()
              // Dispose of any resources that can be recreated.
          }
-         
+       
          // MARK: - MKMapViewDelegate methods
          
          func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {

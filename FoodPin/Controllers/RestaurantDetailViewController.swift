@@ -87,7 +87,7 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
                       return cell
                            case 2:
                                let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: RestaurantDetailTextCell.self), for: indexPath) as! RestaurantDetailTextCell
-                               cell.DescriptionLabel.text = restaurant.description
+                               cell.DescriptionLabel.text = restaurant.summary
                                cell.selectionStyle = .none
                                
                                return cell
