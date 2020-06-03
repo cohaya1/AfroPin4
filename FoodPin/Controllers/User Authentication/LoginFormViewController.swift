@@ -19,11 +19,15 @@ class LoginFormViewController: UIViewController {
     
     @IBOutlet weak var errorLabel: UILabel!
     
+    @IBOutlet weak var resetpassbutton: UIButton!
+    
     var spinner = UIActivityIndicatorView()
     override func viewDidLoad() {
         super.viewDidLoad()
       setUpElements()
-        // Do any additional setup after loading the view.
+        let tap = UIGestureRecognizer(target: self.view,action: #selector(UIView.endEditing))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
     }
     func setUpElements() {
         
@@ -34,9 +38,51 @@ class LoginFormViewController: UIViewController {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(loginButton)
-        
+       
     }
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+            textField.resignFirstResponder()
+            
+            self.view.endEditing(true)
+         return true
+        }
+        
+     
+   @IBAction func forgotPasswordTapped(with sender: Any) {
+      
+        if self.emailTextField.text == "" {
+                let alertController = UIAlertController(title: "Oops!", message: "Please enter an email.", preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                present(alertController, animated: true, completion: nil)
+            
+            } else {
+            Auth.auth().sendPasswordReset(withEmail: self.emailTextField.text!, completion: { (error) in
+                    
+                    var title = ""
+                    var message = ""
+                    
+                    if error != nil {
+                        title = "Error!"
+                        message = (error?.localizedDescription)!
+                    } else {
+                        title = "Success!"
+                        message = "Password reset email sent."
+                        self.emailTextField.text = ""
+                    }
+                    
+                    let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                    
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    
+                    self.present(alertController, animated: true, completion: nil)
+                })
+            }
+        }
     @IBAction func loginTapped(_ sender: Any) {
         spinner.style = .gray
         spinner.hidesWhenStopped = true

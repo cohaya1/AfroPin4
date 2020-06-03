@@ -50,7 +50,9 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
             // Prepare the empty view
             tableView.backgroundView = emptyRestaurantView
             tableView.backgroundView?.isHidden = true
-            
+            let tap = UIGestureRecognizer(target: self.view,action: #selector(UIView.endEditing))
+                   tap.cancelsTouchesInView = false
+                   view.addGestureRecognizer(tap)
         }
         // Fetch data from data store
         let fetchRequest: NSFetchRequest<RestaurantMO> = RestaurantMO.fetchRequest()
@@ -98,6 +100,13 @@ class RestaurantTableViewController: UITableViewController,NSFetchedResultsContr
             
             present(walkthroughViewController, animated: true, completion: nil)
         }
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+    
+        textField.resignFirstResponder()
+        
+        self.view.endEditing(true)
+     return true
     }
     func filterContent( for searchText: String) {
         searchResults = restaurants.filter({ (Restaurant) -> Bool in

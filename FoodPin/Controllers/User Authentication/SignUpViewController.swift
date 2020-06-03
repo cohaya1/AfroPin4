@@ -24,7 +24,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      setUpElements()
-        // Do any additional setup after loading the view.
+         let tap = UIGestureRecognizer(target: self.view,action: #selector(UIView.endEditing))
+               tap.cancelsTouchesInView = false
+               view.addGestureRecognizer(tap)
     }
     func setUpElements() {
        
@@ -59,7 +61,13 @@ class SignUpViewController: UIViewController {
            
            return nil
        }
-       
+       func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+              
+                  textField.resignFirstResponder()
+                  
+                  self.view.endEditing(true)
+               return true
+              }
     
 @IBAction func signUpTapped(_ sender: Any) {
     spinner.style = .gray

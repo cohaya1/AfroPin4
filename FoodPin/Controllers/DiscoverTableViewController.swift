@@ -9,18 +9,13 @@
 import CloudKit
 import UIKit
 
-class DiscoverTableViewController: UITableViewController, UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
-        if let searchText = searchController.searchBar.text {
-          
-            tableView.reloadData()
-        }
-    }
+class DiscoverTableViewController: UITableViewController {
+    
     var restaurants: [CKRecord] = []
     var searchResults: [DiscoverTableViewCell] = []
     var spinner = UIActivityIndicatorView()
     var cell = DiscoverTableViewCell()
-    var searchController : UISearchController!
+    //var searchController : UISearchController!
     private var imageCache = NSCache<CKRecord.ID, NSURL>()
     
     override func viewDidLoad() {
@@ -37,15 +32,7 @@ class DiscoverTableViewController: UITableViewController, UISearchResultsUpdatin
            
             
         }
-        searchController = UISearchController(searchResultsController: nil)
-        //  self.navigationItem.searchController = searchController
-        tableView.tableHeaderView = searchController.searchBar
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = NSLocalizedString("Search restaurants...", comment: "Search restaurants...")
-        searchController.searchBar.barTintColor = .white
-        searchController.searchBar.backgroundImage = UIImage()
-        searchController.searchBar.tintColor = UIColor(red: 70, green: 76, blue: 60,alpha: 1.0)
+       
        
         spinner.style = .gray
             spinner.hidesWhenStopped = true
@@ -69,7 +56,7 @@ class DiscoverTableViewController: UITableViewController, UISearchResultsUpdatin
             fetchRecordsFromCloud()
         
         }
-     
+    
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections

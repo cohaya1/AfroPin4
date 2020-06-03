@@ -12,7 +12,7 @@ import UIKit
 class NewRestaurantTableViewController: UITableViewController, UITextFieldDelegate,UIImagePickerControllerDelegate, UINavigationControllerDelegate  {
      var restaurant: RestaurantMO!
     var africantype = ["West African","East African", "South African","Caribbean","Soul Food"]
-    
+    var selectedTextField: UITextField?
      @IBOutlet var photoImageView: UIImageView!
       
     @IBOutlet var nameTextField: RoundedTextField! {
@@ -65,10 +65,15 @@ class NewRestaurantTableViewController: UITableViewController, UITextFieldDelega
             //Hides nav bar on swipe
             navigationController?.hidesBarsOnSwipe = true
             tableView.separatorStyle = .none
+            let tap = UIGestureRecognizer(target: self.view,action: #selector(UIView.endEditing))
+            tap.cancelsTouchesInView = false
+            view.addGestureRecognizer(tap)
     }
     }
     
       
+    
+  
    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             
@@ -118,6 +123,7 @@ class NewRestaurantTableViewController: UITableViewController, UITextFieldDelega
         if let nextTextField = view.viewWithTag(textField.tag + 1) {
             textField.resignFirstResponder()
             nextTextField.becomeFirstResponder()
+            self.view.endEditing(true)
         }
         
         return true
