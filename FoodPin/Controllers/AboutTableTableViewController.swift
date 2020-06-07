@@ -14,8 +14,8 @@ class AboutTableTableViewController: UITableViewController {
    
     var sectionTitles = [NSLocalizedString("Feedback", comment: "Feedback"), NSLocalizedString("Follow Us", comment: "Follow Us")]
     var sectionContent = [[(image: "store", text: NSLocalizedString("Rate us on App Store", comment: "Rate us on App Store"), link: "https://www.apple.com/itunes/charts/paid-apps/"),
-                           (image: "chat", text: NSLocalizedString("Tell us your feedback", comment: "Tell us your feedback"), link: "http://www.appcoda.com/contact")],
-                          [(image: "twittericon", text: NSLocalizedString("Twitter", comment: "Twitter"), link: "https://twitter.com/appcodamobile"),
+                           (image: "chat", text: NSLocalizedString("Tell us your feedback", comment: "Tell us your feedback"), link: "https://websitebuildertailor.responsivesiteeditor.com/home/site/363d88ce/home")],
+                          [(image: "twittericon", text: NSLocalizedString("Twitter", comment: "Twitter"), link: "https://twitter.com/Cmarley_chika"),
                            (image: "facebookicon", text: NSLocalizedString("Facebook", comment: "Facebook"), link:
                             "https://www.facebook.com/profile.php?id=100001970751345"),
                            (image: "linkedin", text: NSLocalizedString("Linkedin", comment: "Linkedin"), link: "https://www.linkedin.com/in/cohaya1/")]]
@@ -34,6 +34,7 @@ class AboutTableTableViewController: UITableViewController {
                
                tableView.tableFooterView = UIView()
            }
+    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
@@ -88,19 +89,34 @@ class AboutTableTableViewController: UITableViewController {
     }
     
     @IBAction func logoutTapped(_ sender: Any) {
-     
-        if Auth.auth().currentUser != nil {
-                do {
-                    try Auth.auth().signOut()
-                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
-                    present(vc, animated: true, completion: nil)
-                  //  self.navigationController?.pushViewController(vc, animated: true)
-                    
-                } catch let error as NSError {
-                    print(error.localizedDescription)
+        try! Auth.auth().signOut()
+        self.dismiss(animated: false)  {
+        if self.storyboard != nil {
+            self.presentingViewController?.dismiss(animated: false, completion: nil)
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ShowLogin") as! UINavigationController
+                    self.present(vc, animated: false, completion: nil)
                 }
-            }
         }
+//        if Auth.auth().currentUser != nil {
+//                do {
+//                    try Auth.auth().signOut()
+//                    let homeViewController2 =  UIStoryboard(name: "Main", bundle: nil).self.instantiateViewController(withIdentifier: "ShowLogin")
+//                    self.navigationController?.pushViewController(homeViewController2, animated: true)
+//                    self.view.window?.rootViewController = homeViewController2
+//                    self.view.window?.makeKeyAndVisible()
+////                     dismiss(animated: true, completion: {
+////                            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "LoginViewController")
+////
+////
+////                        self.present(vc, animated: true, completion: nil)
+////                    self.navigationController?.pushViewController(vc, animated: true)
+////                    }
+//                } catch let error as NSError {
+//                    print(error.localizedDescription)
+//                }
+//            }
+        }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "showWebView" {

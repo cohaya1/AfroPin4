@@ -43,7 +43,7 @@ struct ContentView: View {
                 ForEach(self.locationViewModel.datas, id: \.id) { data in
                     Card(image: data.image, name: data.name, weburl: data.webUrl)
                 }
-            }.navigationBarTitle("Near By Restaurants").foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/).accentColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+            }.navigationBarTitle("Near By Restaurants").foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
                  
             /*
             List(locationViewModel.datas){i in
@@ -64,7 +64,7 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 class observer : ObservableObject{
-     @State private var shouldAnimate = false
+     
     @Published var datas = [datatype]()
     @ObservedObject var locationViewModel = LocationViewModel()
     init() {
@@ -186,6 +186,8 @@ struct register : View {
         WebView(url: url).navigationBarTitle(name)
     }
 }
+
+
 
 struct WebView : UIViewRepresentable {
     

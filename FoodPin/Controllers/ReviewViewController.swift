@@ -7,15 +7,18 @@
 //
 
 import UIKit
-//protocol SideSelectionDelegate {
-//    func didTapChoice( image: UIImage)
-//}
+
+protocol ReviewViewControllerDelegate: class {
+    func didSelectReview(image: UIImage)
+}
 class ReviewViewController: UIViewController {
    // var selectiondelegate: SideSelectionDelegate!
     
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var rateButtons: [UIButton]!
     @IBOutlet var closeButton: UIButton!
+    
+    weak var delegate: ReviewViewControllerDelegate?
     
     var restaurant: RestaurantMO!
     override func viewDidLoad() {
@@ -58,15 +61,16 @@ class ReviewViewController: UIViewController {
         self.closeButton.transform = .identity
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        
 
 }
+    
+    @IBAction func rateButtonPressed(sender: UIButton) {
+        delegate?.didSelectReview(image: sender.image(for: .normal)!)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func closeButtonPressed(sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
 }

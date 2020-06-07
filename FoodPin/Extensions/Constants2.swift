@@ -10,7 +10,7 @@ import Foundation
 
 struct Constants2 {
 
-struct Storyboard {
+struct Storyboard2 {
     
     static let homeViewController2 = "LoginViewController"
         }

@@ -159,7 +159,7 @@ class NewRestaurantTableViewController: UITableViewController, UITextFieldDelega
 
     @IBAction func saveButtonTapped(sender: AnyObject) {
            
-           if nameTextField.text == "" || typeTextField.text == "" || addressTextField.text == "" || phoneTextField.text == "" || descriptionTextView.text == "" {
+        if nameTextField.text == "" || typeTextField.text == "" || addressTextField.text == "" || phoneTextField.text == "" || descriptionTextView.text == "" && typeTextField.text != "\(africantype)" {
                let alertController = UIAlertController(title: "Oops", message: "We can't proceed because one of the fields is blank or is the not the right Restaurant type. Please note that all fields are required.", preferredStyle: .alert)
                let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                alertController.addAction(alertAction)

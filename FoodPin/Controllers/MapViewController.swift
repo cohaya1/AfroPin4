@@ -26,7 +26,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     
    override func viewDidLoad() {
             super.viewDidLoad()
-    navigationController?.navigationBar.tintColor = .white
+    navigationController?.navigationBar.tintColor = .red
    segmentedcontrol.isHidden = true
    segmentedcontrol.addTarget(self, action: #selector(showDirection), for: .valueChanged)
     // Request User Auth for location services
@@ -192,6 +192,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
              
              
          }
+   
          @IBAction func showNearby(sender: UIButton) {
             
              let searchRequest = MKLocalSearch.Request()

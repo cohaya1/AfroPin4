@@ -52,7 +52,10 @@ class LoginViewController: UIViewController {
             guard bundlePath != nil else {
                 return
             }
-            
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(playerItemDidReachEnd(notification:)),
+            name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+            object: self.videoPlayer?.currentItem)
             // Create a URL from it
             let url = URL(fileURLWithPath: bundlePath!)
             
@@ -73,7 +76,10 @@ class LoginViewController: UIViewController {
             // Add it to the view and play it
             videoPlayer?.playImmediately(atRate: 0.3)
         }
-
+    @objc func playerItemDidReachEnd(notification: NSNotification) {
+        self.videoPlayer?.seek(to: CMTime.zero)
+        self.videoPlayer?.play()
+    }
     
    
     }

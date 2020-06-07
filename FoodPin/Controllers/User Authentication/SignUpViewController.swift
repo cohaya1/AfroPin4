@@ -24,9 +24,7 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      setUpElements()
-         let tap = UIGestureRecognizer(target: self.view,action: #selector(UIView.endEditing))
-               tap.cancelsTouchesInView = false
-               view.addGestureRecognizer(tap)
+       
     }
     func setUpElements() {
        
