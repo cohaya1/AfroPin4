@@ -34,13 +34,13 @@
                                             <rect key="frame" x="0.0" y="6" width="414" height="506"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eaD-xb-IX3">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="236"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="320"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="236" id="6O5-YD-eAU"/>
+                                                        <constraint firstAttribute="height" constant="320" id="6O5-YD-eAU"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="XOB-Nm-CiW">
-                                                    <rect key="frame" x="0.0" y="242" width="414" height="48"/>
+                                                    <rect key="frame" x="0.0" y="326" width="414" height="48"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-7d-dQP">
                                                             <rect key="frame" x="0.0" y="0.0" width="69" height="30"/>
@@ -63,7 +63,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nXn-xN-gat">
-                                                    <rect key="frame" x="0.0" y="296" width="414" height="210"/>
+                                                    <rect key="frame" x="0.0" y="380" width="414" height="126"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kNh-3E-P8W">
                                                             <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
@@ -75,7 +75,7 @@
                                                                         <constraint firstAttribute="width" constant="30" id="vux-Md-X1M"/>
                                                                     </constraints>
                                                                     <inset key="imageEdgeInsets" minX="2" minY="0.0" maxX="0.0" maxY="2"/>
-                                                                    <state key="normal" image="RedMap"/>
+                                                                    <state key="normal" image="appleMap"/>
                                                                     <connections>
                                                                         <action selector="goToMaps:" destination="Fbx-WT-7is" eventType="touchUpInside" id="6Qu-SC-qKV"/>
                                                                     </connections>
@@ -111,7 +111,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bf-OD-ikk">
-                                                            <rect key="frame" x="0.0" y="74" width="414" height="136"/>
+                                                            <rect key="frame" x="0.0" y="74" width="414" height="52"/>
                                                             <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="14"/>
                                                             <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -171,7 +171,7 @@
     </scenes>
     <resources>
         <image name="Discover" width="50" height="50"/>
-        <image name="RedMap" width="50" height="50"/>
+        <image name="appleMap" width="50" height="50"/>
         <image name="redPhone" width="50" height="50"/>
     </resources>
 </document>

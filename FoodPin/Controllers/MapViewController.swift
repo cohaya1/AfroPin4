@@ -12,7 +12,7 @@ class MapViewController: UIViewController,MKMapViewDelegate {
     
     
     @IBOutlet var mapView2 : MKMapView!
-    @IBOutlet var ExitMapButton : UIButton!
+    
     @IBOutlet var segmentedcontrol : UISegmentedControl!
     @IBOutlet weak var NearbyButton : UIButton!
    

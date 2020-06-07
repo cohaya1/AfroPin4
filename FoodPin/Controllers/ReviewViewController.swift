@@ -9,7 +9,9 @@
 import UIKit
 
 protocol ReviewViewControllerDelegate: class {
+    
     func didSelectReview(image: UIImage)
+    
 }
 class ReviewViewController: UIViewController {
    // var selectiondelegate: SideSelectionDelegate!

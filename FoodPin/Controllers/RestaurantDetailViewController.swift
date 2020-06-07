@@ -21,6 +21,7 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //saveEmojiImages()
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.tintColor = .white
@@ -49,13 +50,29 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
         tableview.separatorStyle = .none
         // Display rating
         if let rating = restaurant.rating {
-            headerview.RatingImageView.image = UIImage(named: rating)
+            headerview.RatingImageView?.image = UIImage(named: rating)
         }
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.hidesBarsOnSwipe = false
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    func saveEmojiImages() {
+        //Encoding
+        let image = UIImage(named: "Drooling Emoji")
+        
+        
+         
+                
+        let imageData:NSData = image!.pngData()! as NSData
+        
+               //Saved image
+               UserDefaults.standard.set(imageData, forKey: "savedImage")
+             
+               //Decode
+               let data = UserDefaults.standard.object(forKey: "savedImage") as! NSData
+        headerview.RatingImageView.image = UIImage(data: data as Data)
     }
     
     
@@ -136,7 +153,7 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
             if let rating = segue.identifier {
                 self.restaurant.rating = rating
                 
-                self.headerview.RatingImageView.image = UIImage(named: rating)
+                self.headerview.RatingImageView?.image = UIImage(named: rating)
                 if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
                     appDelegate.saveContext()
                 }
@@ -164,11 +181,13 @@ class RestaurantDetailViewController: UIViewController,UITableViewDataSource,UIT
 extension RestaurantDetailViewController: ReviewViewControllerDelegate {
     func didSelectReview(image: UIImage) {
         headerview.RatingImageView.image = image
+    
+       
+    }
+    
     }
     
     
-    
-    
-}
+
 
 
