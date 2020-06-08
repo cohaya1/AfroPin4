@@ -342,6 +342,14 @@
 			path = FoodPinUITests;
 			sourceTree = "<group>";
 		};
+		1D931EDC248D703B003B6379 /* NetworkData */ = {
+			isa = PBXGroup;
+			children = (
+				1DB00A40247B7FC400E4803A /* LocationViewModel.swift */,
+			);
+			path = NetworkData;
+			sourceTree = "<group>";
+		};
 		1DB00A44247C538D00E4803A /* User Authentication */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,7 +390,7 @@
 				1D40AD3323D2525300FDB4C6 /* Restaurant.swift */,
 				1D40AD8B23D8A10A00FDB4C6 /* RestaurantDetailHeaderView.swift */,
 				1D894F14243581C900EA14DE /* RoundedTextField.swift */,
-				1DB00A40247B7FC400E4803A /* LocationViewModel.swift */,
+				1D931EDC248D703B003B6379 /* NetworkData */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";

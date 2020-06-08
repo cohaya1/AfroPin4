@@ -5,7 +5,8 @@
 //  Created by Makaveli Ohaya on 5/9/20.
 //  Copyright © 2020 Makaveli Ohaya. All rights reserved.
 //
-
+import Foundation
+import UIKit
 import SwiftUI
 import SDWebImageSwiftUI
 import WebKit
@@ -25,26 +26,33 @@ extension View {
     }
 }
 
+
 struct ContentView: View {
-    @State private var shouldAnimate = false
+    
     //@ObservedObject var obs = observer()
 
 @ObservedObject var locationViewModel = LocationViewModel()
     
-    
-    
-     
+   
     
     var body: some View {
-        
+        ActivityIndicatorView(isDisplayed: .constant(true)) {
+        VStack{
+           
+       
         NavigationView{
             
             List {
+                
+                
+                
                 ForEach(self.locationViewModel.datas, id: \.id) { data in
                     Card(image: data.image, name: data.name, weburl: data.webUrl)
+                    
                 }
+                
             }.navigationBarTitle("Near By Restaurants").foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
-                 
+            
             /*
             List(locationViewModel.datas){i in
                 
@@ -53,13 +61,67 @@ struct ContentView: View {
             }.navigationBarTitle("Near By Restaurants")
             */
         }
-
+            
+            }
+        }
+        
     }
+    
+}
+ 
+struct ActivityIndicator : UIViewRepresentable {
+  
+    typealias UIViewType = UIActivityIndicatorView
+    let style : UIActivityIndicatorView.Style
+    
+    func makeUIView(context: UIViewRepresentableContext<ActivityIndicator>) -> ActivityIndicator.UIViewType {
+        return UIActivityIndicatorView(style: style)
+    }
+    
+    func updateUIView(_ uiView: ActivityIndicator.UIViewType, context: UIViewRepresentableContext<ActivityIndicator>) {
+        uiView.startAnimating()
+    }
+  
 }
 
+
+struct ActivityIndicatorView<Content> : View where Content : View {
+    
+    @Binding var isDisplayed : Bool
+    var content: () -> Content
+    
+    var body : some View {
+        GeometryReader { geometry in
+            ZStack(alignment: .center) {
+                if (!self.isDisplayed) {
+                    self.content()
+                } else {
+                    self.content()
+                        .disabled(true)
+                        .blur(radius: 3)
+                    
+                    VStack {
+                        Text("LOADING")
+                        ActivityIndicator(style: .large)
+                    }
+                    .frame(width: geometry.size.width/2.0, height: 200.0)
+                    .background(Color.secondary.colorInvert())
+                    .foregroundColor(Color.primary)
+                    .cornerRadius(20)
+                }
+            }
+        }
+    }
+    
+    
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
+        
+            
+        
         ContentView()
+        
     }
 }
 
@@ -104,7 +166,7 @@ class observer : ObservableObject{
             }
             catch{
                 
-                print(error)
+               fatalError("Fetch Error: \(error.localizedDescription)")
                 
             }
             
