@@ -33,12 +33,14 @@ struct ContentView: View {
 
 @ObservedObject var locationViewModel = LocationViewModel()
     
-   
+   @State var isDisplayed: Bool = false
     
     var body: some View {
+       
         ActivityIndicatorView(isDisplayed: .constant(true)) {
-        VStack{
            
+        VStack{
+          
        
         NavigationView{
             
@@ -48,11 +50,11 @@ struct ContentView: View {
                 
                 ForEach(self.locationViewModel.datas, id: \.id) { data in
                     Card(image: data.image, name: data.name, weburl: data.webUrl)
-                    
+                
                 }
                 
             }.navigationBarTitle("Near By Restaurants").foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
-            
+          
             /*
             List(locationViewModel.datas){i in
                 
@@ -61,12 +63,13 @@ struct ContentView: View {
             }.navigationBarTitle("Near By Restaurants")
             */
         }
-            
-            }
-        }
         
+            }
+            
+        }
+      
     }
-    
+   
 }
  
 struct ActivityIndicator : UIViewRepresentable {
@@ -110,6 +113,7 @@ struct ActivityIndicatorView<Content> : View where Content : View {
                     .cornerRadius(20)
                 }
             }
+            
         }
     }
     
